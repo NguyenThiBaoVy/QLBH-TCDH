@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechZone - Hệ Thống Thiết Bị Công Nghệ & Giao Hàng Hỏa Tốc 2H</title>
+  
+  <!-- Font Awesome Icons 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- TechZone Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. HEADER ĐA TẦNG (MULTI-TIER HEADER)
+       ======================================================================== -->
+  <header class="tz-header">
+    
+    <!-- Top Bar -->
+    <div class="tz-topbar">
+      <div class="container topbar-content">
+        <div class="topbar-left">
+          <!-- Location Dropdown Selector -->
+          <div class="tz-location-wrapper">
+            <button type="button" class="tz-location-badge" id="btn-select-location" aria-expanded="false" title="Nhấp để đổi khu vực">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="tz-location-name">Hà Nội</span>
+              <i class="fa-solid fa-angle-down tz-location-arrow"></i>
+            </button>
+            <div class="tz-location-dropdown" id="tz-location-dropdown" role="listbox">
+              <div class="tz-dropdown-header">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Chọn khu vực nhận hàng:</span>
+              </div>
+              <ul class="tz-location-list">
+                <li class="tz-location-item" data-city="Hà Nội" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> Hà Nội</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+                <li class="tz-location-item" data-city="TP. Hồ Chí Minh" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> TP. Hồ Chí Minh</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+                <li class="tz-location-item" data-city="Đà Nẵng" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> Đà Nẵng</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+                <li class="tz-location-item" data-city="Cần Thơ" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> Cần Thơ</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+                <li class="tz-location-item" data-city="Hải Phòng" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> Hải Phòng</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+                <li class="tz-location-item" data-city="Đồng Nai" role="option">
+                  <span class="tz-city-name"><i class="fa-solid fa-building"></i> Đồng Nai</span>
+                  <i class="fa-solid fa-check tz-city-check"></i>
+                </li>
+              </ul>
+              <div class="tz-dropdown-footer">
+                <i class="fa-solid fa-truck-fast"></i> Giao siêu tốc 2H tại các khu vực trên
+              </div>
+            </div>
+          </div>
+
+          <span class="topbar-divider topbar-hide-mobile">|</span>
+          <a href="#" class="topbar-link topbar-hide-mobile"><i class="fa-solid fa-store"></i> Hệ thống 86 chi nhánh</a>
+          <span class="topbar-divider topbar-hide-mobile">|</span>
+          <a href="#" class="topbar-link topbar-hide-mobile"><i class="fa-solid fa-newspaper"></i> Tin tức TechZone</a>
+        </div>
+
+        <div class="topbar-right">
+          <span class="topbar-link topbar-hotline"><i class="fa-solid fa-headset"></i> Hotline: <strong>1800.6868</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="tz-main-header">
+      <div class="container main-header-row">
+        
+        <!-- Logo -->
+        <a href="index.html" class="tz-logo">
+          <div class="tz-logo-chip">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <div>Tech<span class="accent">Zone</span></div>
+        </a>
+
+        <!-- Nút Trang chủ -->
+        <a href="index.html" class="btn-home-nav active" title="Trang chủ TechZone">
+          <i class="fa-solid fa-house"></i>
+          <span>Trang chủ</span>
+        </a>
+
+        <!-- Category Dropdown Toggle with Mega Menu -->
+        <div class="tz-category-wrapper">
+          <button type="button" class="btn-category-menu" id="header-category-toggle" aria-expanded="false" title="Xem danh mục sản phẩm">
+            <i class="fa-solid fa-bars-staggered"></i>
+            <span>Danh mục</span>
+            <i class="fa-solid fa-angle-down tz-category-arrow"></i>
+          </button>
+          <div class="tz-category-dropdown" id="header-category-dropdown">
+            <div class="tz-category-dropdown-header">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Danh Mục Sản Phẩm</span>
+            </div>
+            <ul class="tz-category-menu-list">
+              <li class="tz-category-menu-item" data-category="phone">
+                <a href="products.html?category=phone" class="tz-cat-link">
+                  <div class="tz-cat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                  <div class="tz-cat-info">
+                    <span class="tz-cat-title">1. Điện thoại & Tablet</span>
+                    <span class="tz-cat-desc">iPhone 16, Galaxy S24, Xiaomi, iPad</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right tz-cat-chevron"></i>
+                </a>
+              </li>
+              <li class="tz-category-menu-item" data-category="laptop">
+                <a href="products.html?category=laptop" class="tz-cat-link">
+                  <div class="tz-cat-icon"><i class="fa-solid fa-laptop"></i></div>
+                  <div class="tz-cat-info">
+                    <span class="tz-cat-title">2. Laptop & Màn hình máy tính</span>
+                    <span class="tz-cat-desc">ROG Gaming, MacBook M3, Dell XPS</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right tz-cat-chevron"></i>
+                </a>
+              </li>
+              <li class="tz-category-menu-item" data-category="audio">
+                <a href="products.html?category=audio" class="tz-cat-link">
+                  <div class="tz-cat-icon"><i class="fa-solid fa-headphones"></i></div>
+                  <div class="tz-cat-info">
+                    <span class="tz-cat-title">3. Thiết bị Âm thanh (Tai nghe, Loa)</span>
+                    <span class="tz-cat-desc">AirPods Pro 2, Sony ANC, JBL, Marshall</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right tz-cat-chevron"></i>
+                </a>
+              </li>
+              <li class="tz-category-menu-item" data-category="watch">
+                <a href="products.html?category=watch" class="tz-cat-link">
+                  <div class="tz-cat-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                  <div class="tz-cat-info">
+                    <span class="tz-cat-title">4. Đồng hồ thông minh (Smartwatch)</span>
+                    <span class="tz-cat-desc">Apple Watch Ultra 2, Garmin, Galaxy Watch</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right tz-cat-chevron"></i>
+                </a>
+              </li>
+              <li class="tz-category-menu-item" data-category="accessory">
+                <a href="products.html?category=accessory" class="tz-cat-link">
+                  <div class="tz-cat-icon"><i class="fa-solid fa-bolt"></i></div>
+                  <div class="tz-cat-info">
+                    <span class="tz-cat-title">5. Phụ kiện sạc cáp, pin dự phòng</span>
+                    <span class="tz-cat-desc">Anker, Baseus, Cáp sạc GaN 100W</span>
+                  </div>
+                  <i class="fa-solid fa-chevron-right tz-cat-chevron"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="tz-category-dropdown-footer">
+              <a href="products.html">
+                <i class="fa-solid fa-layer-group"></i> Xem toàn bộ 500+ sản phẩm TechZone <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Search Bar with Prominent Button -->
+        <div class="tz-search-wrapper">
+          <div class="tz-search-bar">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="header-global-search" placeholder="Tìm kiếm iPhone 16, Laptop Gaming, Phụ kiện...">
+            <button type="button" class="tz-btn-search" onclick="location.href='products.html'">
+              Tìm kiếm
+            </button>
+          </div>
+          <div class="search-hot-keywords">
+            <span>Gợi ý:</span>
+            <a href="products.html?q=iPhone 16">iPhone 16 Pro Max</a>
+            <a href="products.html?q=S24 Ultra">Galaxy S24 Ultra</a>
+            <a href="products.html?q=MacBook">MacBook Pro M3</a>
+            <a href="products.html?q=AirPods">AirPods Pro 2</a>
+          </div>
+        </div>
+
+        <!-- Action Group on the Right -->
+        <div class="tz-header-actions">
+          
+          <!-- User Account Button (Đăng nhập / Tên người dùng) -->
+          <div class="tz-user-wrapper" id="tz-user-wrapper">
+            <a href="login.html" class="tz-user-btn" id="tz-user-btn" title="Tài khoản">
+              <i class="fa-solid fa-circle-user"></i>
+              <div class="meta">
+                <span class="sub">Tài khoản</span>
+                <span id="tz-user-name-display">Đăng nhập</span>
+              </div>
+            </a>
+            <div class="tz-user-dropdown" id="tz-user-dropdown">
+              <div class="tz-user-dropdown-header">
+                <i class="fa-solid fa-user-check"></i>
+                <span id="tz-dropdown-greeting">Xin chào, Bạn!</span>
+              </div>
+              <a href="history.html" class="tz-user-dropdown-item">
+                <i class="fa-solid fa-clock-rotate-left"></i> Đơn mua của tôi
+              </a>
+              <a href="#" class="tz-user-dropdown-item" id="tz-btn-profile-info">
+                <i class="fa-solid fa-id-card"></i> Thông tin tài khoản
+              </a>
+              <div class="tz-user-dropdown-item logout" id="tz-btn-logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+              </div>
+            </div>
+          </div>
+
+          <!-- Single Order History / Đơn Mua Button (Mô hình Shopee: Không cần nhập mã) -->
+          <a href="history.html" class="tz-nav-btn" id="nav-orders-btn" title="Đơn mua & Tra cứu lộ trình">
+            <i class="fa-solid fa-box-archive"></i>
+            <div class="meta">
+              <span class="sub">Quản lý</span>
+              <span>Đơn mua</span>
+            </div>
+          </a>
+
+          <!-- Cart Button with Count Badge -->
+          <a href="checkout.html" class="tz-nav-btn tz-cart-btn" title="Xem giỏ hàng TechZone">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="meta">
+              <span class="sub">Giỏ hàng</span>
+              <span>Thanh toán</span>
+            </div>
+            <span class="tz-cart-badge">0</span>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN BODY CONTENT
+       ======================================================================== -->
+  <main class="main-content">
+    
+    <!-- 2. KHU VỰC HERO LAYOUT (BỐ CỤC 3 CỘT KINH ĐIỂN) -->
+    <section class="container hero-layout-section">
+      <div class="hero-3cols-grid">
+        
+        <!-- Cột trái: Sidebar Categories -->
+        <aside class="tz-sidebar-menu">
+          
+          <!-- Item 1: Điện thoại -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span>Điện thoại, Tablet</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+            
+            <!-- Flyout Submenu -->
+            <div class="tz-flyout-menu">
+              <div class="flyout-block">
+                <h5>Thương hiệu nổi bật</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Apple iPhone</a>
+                  <a href="products.html">Samsung Galaxy</a>
+                  <a href="products.html">Xiaomi Series</a>
+                  <a href="products.html">OPPO Flagship</a>
+                  <a href="products.html">vivo, Realme</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Mức giá chọn lọc</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Dưới 5 triệu</a>
+                  <a href="products.html">Từ 5 - 12 triệu</a>
+                  <a href="products.html">Từ 12 - 20 triệu</a>
+                  <a href="products.html">Cao cấp trên 20 triệu</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Máy tính bảng Tablet</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">iPad Pro M4 / iPad Air</a>
+                  <a href="products.html">Samsung Galaxy Tab S9</a>
+                  <a href="products.html">Xiaomi Pad 6</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Laptop & Màn hình -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-laptop"></i>
+              <span>Laptop & Màn hình</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+
+            <div class="tz-flyout-menu">
+              <div class="flyout-block">
+                <h5>Dòng máy tuyển chọn</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">MacBook Pro & Air</a>
+                  <a href="products.html">ASUS ROG Gaming</a>
+                  <a href="products.html">Dell XPS Cao cấp</a>
+                  <a href="products.html">Lenovo Legion 5</a>
+                  <a href="products.html">Acer Predator, Nitro</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Nhu cầu công việc</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Laptop Gaming đỉnh cao</a>
+                  <a href="products.html">Văn phòng - Doanh nhân</a>
+                  <a href="products.html">Đồ họa 3D & AI Tech</a>
+                  <a href="products.html">Mỏng nhẹ di động</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Màn hình đồ họa & Game</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Màn hình 2K, 4K UHD</a>
+                  <a href="products.html">Màn hình tần số 240Hz</a>
+                  <a href="products.html">Màn hình cong UltraWide</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Thiết bị âm thanh -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-headphones"></i>
+              <span>Thiết bị âm thanh</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+            <div class="tz-flyout-menu">
+              <div class="flyout-block">
+                <h5>Tai nghe không dây</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">AirPods Apple</a>
+                  <a href="products.html">Sony WH-1000XM5</a>
+                  <a href="products.html">Marshall Major</a>
+                  <a href="products.html">JBL, Bose</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Loa Bluetooth di động</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Marshall Emberton II</a>
+                  <a href="products.html">JBL Charge, Flip</a>
+                  <a href="products.html">Harman Kardon</a>
+                </div>
+              </div>
+              <div class="flyout-block">
+                <h5>Micro & Audio DAC</h5>
+                <div class="flyout-items-list">
+                  <a href="products.html">Micro Podcast, Livestream</a>
+                  <a href="products.html">DAC giải mã Hi-Res</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Smartwatch -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-clock"></i>
+              <span>Đồng hồ thông minh</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+          </div>
+
+          <!-- Item 5: Phụ kiện -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-plug"></i>
+              <span>Phụ kiện công nghệ</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+          </div>
+
+          <!-- Item 6: Linh kiện PC -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-microchip"></i>
+              <span>Linh kiện PC, Bàn phím</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+          </div>
+
+          <!-- Item 7: Thu cũ đổi mới -->
+          <div class="tz-menu-item" style="color: var(--tz-blue);">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-arrows-rotate" style="color: var(--tz-cyan);"></i>
+              <span>Thu cũ đổi mới trợ giá 2tr</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+          </div>
+
+          <!-- Item 8: Hàng Outlet -->
+          <div class="tz-menu-item">
+            <div class="tz-menu-item-left">
+              <i class="fa-solid fa-tags"></i>
+              <span>Hàng Outlet - Giá tốt</span>
+            </div>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+          </div>
+
+        </aside>
+
+        <!-- Cột giữa: Slider chính + Dải 3 Mini Promo Cards lấp kín khoảng trống -->
+        <div class="tz-hero-middle-col">
+          <div class="tz-main-slider">
+            <div class="tz-slider-track">
+              
+              <!-- Slide 1: iPhone 16 -->
+              <div class="tz-slide active">
+                <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=900&q=80" alt="iPhone 16 Pro Max">
+              </div>
+
+              <!-- Slide 2: S24 Ultra -->
+              <div class="tz-slide">
+                <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=900&q=80" alt="Galaxy S24 Ultra">
+              </div>
+
+              <!-- Slide 3: ASUS ROG Gaming -->
+              <div class="tz-slide">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=900&q=80" alt="ASUS ROG Gaming">
+              </div>
+
+              <!-- Slide 4: Apple M3 Ecosystem -->
+              <div class="tz-slide">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900&q=80" alt="MacBook M3">
+              </div>
+
+              <!-- Slider Arrows -->
+              <button class="tz-slider-btn prev" title="Slide trước"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="tz-slider-btn next" title="Slide kế tiếp"><i class="fa-solid fa-chevron-right"></i></button>
+
+              <!-- Slider Dots Indicator (Đồng bộ với js/main.js) -->
+              <div class="tz-slider-dots">
+                <button class="tz-slide-tab tz-slider-dot active" title="Slide 1"></button>
+                <button class="tz-slide-tab tz-slider-dot" title="Slide 2"></button>
+                <button class="tz-slide-tab tz-slider-dot" title="Slide 3"></button>
+                <button class="tz-slide-tab tz-slider-dot" title="Slide 4"></button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dải 3 Banner Phụ Mini (Mini Promo Cards) lấp kín bên dưới slider -->
+          <div class="tz-mini-promo-row">
+            <a href="products.html?q=iPhone 16" class="tz-mini-promo-card" title="Xem ưu đãi iPhone 16 Pro Max">
+              <div class="mini-promo-badge-wrap">
+                <span class="mini-promo-badge badge-red"><i class="fa-solid fa-fire"></i> HOT SALE</span>
+                <span class="mini-promo-sub">Mở bán đợt 2</span>
+              </div>
+              <h5 class="mini-promo-name">iPhone 16 Pro Max</h5>
+              <p class="mini-promo-benefit"><i class="fa-solid fa-arrows-rotate"></i> Trợ giá thu cũ 2.500.000đ</p>
+            </a>
+
+            <a href="products.html?q=S24 Ultra" class="tz-mini-promo-card" title="Xem ưu đãi Galaxy S24 Ultra">
+              <div class="mini-promo-badge-wrap">
+                <span class="mini-promo-badge badge-blue"><i class="fa-solid fa-wand-magic-sparkles"></i> GALAXY AI</span>
+                <span class="mini-promo-sub">Đặc quyền VIP</span>
+              </div>
+              <h5 class="mini-promo-name">Galaxy S24 Ultra</h5>
+              <p class="mini-promo-benefit"><i class="fa-solid fa-gift"></i> Tặng sạc 45W + Care+ 1 năm</p>
+            </a>
+
+            <a href="products.html?q=MacBook" class="tz-mini-promo-card" title="Xem ưu đãi MacBook M3">
+              <div class="mini-promo-badge-wrap">
+                <span class="mini-promo-badge badge-purple"><i class="fa-solid fa-graduation-cap"></i> TRỢ GIÁ HSSV</span>
+                <span class="mini-promo-sub">Ưu đãi tựu trường</span>
+              </div>
+              <h5 class="mini-promo-name">MacBook Air & Pro M3</h5>
+              <p class="mini-promo-benefit"><i class="fa-solid fa-shield-halved"></i> Giảm 1.000.000đ + Balo VIP</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cột phải: 3 Sub-banners -->
+        <div class="tz-sub-banners">
+          <a href="products.html" class="tz-promo-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80" alt="Smartwatch Tech">
+          </a>
+          <a href="products.html" class="tz-promo-card">
+            <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&q=80" alt="Tai nghe AirPods">
+          </a>
+          <a href="products.html" class="tz-promo-card">
+            <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&q=80" alt="iPad Pro M4">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- 3. THANH CAM KẾT DỊCH VỤ (TRUST BADGES BAR) -->
+      <div class="tz-trust-bar">
+        <div class="tz-trust-grid">
+          <div class="tz-trust-item">
+            <div class="tz-trust-icon" title="Hàng chính hãng 100%">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(2, 132, 199, 0.15)" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="tz-trust-info">
+              <h6>Hàng Chính Hãng 100%</h6>
+              <p>Ủy quyền chính thức từ Apple, Samsung, ASUS</p>
+            </div>
+          </div>
+          <div class="tz-trust-item">
+            <div class="tz-trust-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="tz-trust-info">
+              <h6>Bảo Hành 12 - 24 Tháng</h6>
+              <p>Hệ thống trạm dịch vụ kỹ thuật toàn quốc</p>
+            </div>
+          </div>
+          <div class="tz-trust-item">
+            <div class="tz-trust-icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <div class="tz-trust-info">
+              <h6>Đổi Trả Dễ Dàng 30 Ngày</h6>
+              <p>Lỗi nhà sản xuất được đổi ngay máy mới</p>
+            </div>
+          </div>
+          <div class="tz-trust-item">
+            <div class="tz-trust-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="tz-trust-info">
+              <h6>Giao Hỏa Tốc Trong 2 Giờ</h6>
+              <p>Đội ngũ bưu tá riêng của TechZone Express</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. KHỐI FLASH SALE GIỜ VÀNG (ĐẶT NGAY SAU BANNER HERO & THANH CAM KẾT)
+         ======================================================================== -->
+    <section class="container" style="margin-top: 1.5rem;">
+      <div class="tz-flashsale-block">
+        <div class="flashsale-top-bar">
+          <div class="flashsale-heading">
+            <i class="fa-solid fa-bolt-lightning" style="color: #f97316;"></i> FLASH SALE GIỜ VÀNG
+            <span style="font-size: 0.75rem; background: rgba(239, 68, 68, 0.2); color: #fca5a5; padding: 3px 8px; border-radius: 9999px; margin-left: 6px; font-weight: 700;">
+              🔥 ĐANG DIỄN RA
+            </span>
+          </div>
+
+          <div class="flashsale-timer">
+            <span>KẾT THÚC TRONG:</span>
+            <div class="tz-timer-box" id="timer-hours">08</div>
+            <span class="tz-timer-colon">:</span>
+            <div class="tz-timer-box" id="timer-mins">45</div>
+            <span class="tz-timer-colon">:</span>
+            <div class="tz-timer-box" id="timer-secs">12</div>
+          </div>
+        </div>
+
+        <!-- Flash Sale 5 Cards Grid with Sold Progress Bar -->
+        <div id="flashsale-cards-container" class="flashsale-cards-grid">
+          <!-- Rendered dynamically by JS with 5 products -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. BANNER THÔNG MINH: TIẾN TRÌNH ĐƠN MUA HÀNG (SMART ORDER STATUS BANNER)
+         ======================================================================== -->
+    <section class="container" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+      <div id="home-smart-order-banner" class="home-smart-order-banner">
+        <!-- Rendered dynamically by JavaScript based on active order status -->
+        <div class="tz-smart-banner-card active-delivery" onclick="window.location.href='tracking-detail.html?id=SPX-892341'" title="Nhấp vào để xem lộ trình giao nhận thời gian thực">
+          <div class="smart-banner-left">
+            <div class="smart-banner-thumb-wrap">
+              <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=300&q=80" alt="iPhone 16 Pro Max" class="smart-banner-thumb">
+              <span class="smart-banner-pulse-badge"><i class="fa-solid fa-bolt"></i> SPX</span>
+            </div>
+            <div class="smart-banner-info">
+              <div class="smart-banner-status-tag">
+                <span class="live-pulse-dot"></span>
+                <strong>ĐƠN HÀNG ĐANG GIAO HỎA TỐC</strong>
+                <span class="smart-code-chip">#SPX-892341</span>
+              </div>
+              <h4 class="smart-banner-title">
+                iPhone 16 Pro Max 256GB - Titanium Tự Nhiên <span class="smart-other-count">+1 sản phẩm khác</span>
+              </h4>
+              <p class="smart-banner-desc">
+                <i class="fa-solid fa-location-dot" style="color: #ef4444;"></i> Shipper Trần Hoàng Nam (0988.223.344) đang giao hàng đến bạn. Dự kiến: 14:30 Hôm nay
+              </p>
+            </div>
+          </div>
+          <div class="smart-banner-right" onclick="event.stopPropagation()">
+            <a href="tracking-detail.html?id=SPX-892341" class="btn-smart-track-main">
+              <i class="fa-solid fa-route"></i> Xem lộ trình giao nhận <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="history.html" class="btn-smart-history-link">
+              <i class="fa-solid fa-receipt"></i> Tất cả đơn mua (5)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. CÁC SECTION BÁN HÀNG & DANH MỤC NỔI BẬT
+         ======================================================================== -->
+
+    <!-- BLOCK 1: ĐIỆN THOẠI NỔI BẬT -->
+    <section class="container tz-category-section">
+      <div class="section-top-row">
+        <div class="section-heading">
+          <span class="indicator"></span> <i class="fa-solid fa-mobile-screen-button" style="color: var(--tz-cyan); margin-right: 6px;"></i> ĐIỆN THOẠI THÔNG MINH NỔI BẬT
+        </div>
+
+        <div class="section-brand-tabs">
+          <button class="tz-tab-pill active" data-category="Điện thoại" data-brand="all">Tất cả</button>
+          <button class="tz-tab-pill" data-category="Điện thoại" data-brand="Apple">Apple iPhone</button>
+          <button class="tz-tab-pill" data-category="Điện thoại" data-brand="Samsung">Samsung Galaxy</button>
+          <button class="tz-tab-pill" data-category="Điện thoại" data-brand="Xiaomi">Xiaomi</button>
+          <button class="tz-tab-pill" data-category="Điện thoại" data-brand="OPPO">OPPO</button>
+        </div>
+      </div>
+
+      <!-- Banner ngang phụ danh mục Điện thoại (chiều cao ~130px, rộng 100%, bo góc 12px) -->
+      <div class="category-horizontal-banner">
+        <img src="https://images.unsplash.com/photo-1616469829941-c7200edec809?w=1200&q=80" alt="Banner Điện Thoại TechZone">
+        <div class="horizontal-banner-overlay">
+          <span class="banner-tag">ƯU ĐÃI ĐẶC QUYỀN</span>
+          <h3 class="banner-heading">LỄ HỘI FLAGSHIP AI - TRỢ GIÁ THU CŨ ĐỔI MỚI LÊN ĐẾN 3.000.000Đ</h3>
+          <p class="banner-subtext">Tặng gói bảo hành VIP 1 đổi 1 trong 12 tháng & Hỗ trợ trả góp 0% lãi suất duyệt nhanh</p>
+        </div>
+      </div>
+
+      <!-- Lưới sản phẩm toàn phần (Full-width 5 cột trên Desktop = 10 sản phẩm chia đều 2 hàng) -->
+      <div id="phones-grid-container" class="products-grid fullwidth-grid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="section-footer-link">
+        <a href="products.html?category=phone" class="btn-see-more">
+          Xem tất cả điện thoại & Tablet <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOCK 2: LAPTOP & MÁY TÍNH BẢNG -->
+    <section class="container tz-category-section">
+      <div class="section-top-row">
+        <div class="section-heading">
+          <span class="indicator"></span> <i class="fa-solid fa-laptop" style="color: var(--tz-cyan); margin-right: 6px;"></i> LAPTOP & MÁY TÍNH BẢNG CAO CẤP
+        </div>
+
+        <div class="section-brand-tabs">
+          <button class="tz-tab-pill active" data-category="Laptop" data-brand="all">Tất cả</button>
+          <button class="tz-tab-pill" data-category="Laptop" data-brand="Asus">Laptop Gaming</button>
+          <button class="tz-tab-pill" data-category="Laptop" data-brand="Apple">MacBook & iPad</button>
+          <button class="tz-tab-pill" data-category="Laptop" data-brand="Dell">Dell XPS</button>
+          <button class="tz-tab-pill" data-category="Laptop" data-brand="Lenovo">Lenovo Legion</button>
+        </div>
+      </div>
+
+      <!-- Banner ngang phụ danh mục Laptop -->
+      <div class="category-horizontal-banner">
+        <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?w=1200&q=80" alt="Banner Laptop TechZone">
+        <div class="horizontal-banner-overlay">
+          <span class="banner-tag">BACK TO UNIVERSITY</span>
+          <h3 class="banner-heading">LAPTOP GAMING & ĐỒ HỌA MẠNH MẼ - GIẢM THÊM 10% CHO HỌC SINH SINH VIÊN</h3>
+          <p class="banner-subtext">Tặng balo gaming chống sốc cao cấp & Chuột không dây chính hãng TechZone</p>
+        </div>
+      </div>
+
+      <!-- Lưới sản phẩm toàn phần (Full-width 5 cột trên Desktop = 10 sản phẩm chia đều 2 hàng) -->
+      <div id="laptops-grid-container" class="products-grid fullwidth-grid">
+        <!-- Rendered by JS with CPU, RAM, RTX specs -->
+      </div>
+
+      <div class="section-footer-link">
+        <a href="products.html?category=laptop" class="btn-see-more">
+          Xem tất cả Laptop & Màn hình <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- BLOCK 3: PHỤ KIỆN CÔNG NGHỆ -->
+    <section class="container tz-category-section">
+      <div class="section-top-row">
+        <div class="section-heading">
+          <span class="indicator"></span> <i class="fa-solid fa-headphones" style="color: var(--tz-cyan); margin-right: 6px;"></i> PHỤ KIỆN CÔNG NGHỆ CHÍNH HÃNG
+        </div>
+
+        <div class="section-brand-tabs">
+          <button class="tz-tab-pill active" data-category="Phụ kiện" data-brand="all">Tất cả</button>
+          <button class="tz-tab-pill" data-category="Phụ kiện" data-brand="Apple">Phụ kiện Apple</button>
+          <button class="tz-tab-pill" data-category="Phụ kiện" data-brand="Anker">Củ sạc Anker</button>
+          <button class="tz-tab-pill" data-category="Phụ kiện" data-brand="Baseus">Pin sạc Baseus</button>
+          <button class="tz-tab-pill" data-category="Phụ kiện" data-brand="Sony">Tai nghe Sony</button>
+        </div>
+      </div>
+
+      <!-- Banner ngang phụ danh mục Phụ kiện -->
+      <div class="category-horizontal-banner">
+        <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=1200&q=80" alt="Banner Phụ Kiện TechZone">
+        <div class="horizontal-banner-overlay">
+          <span class="banner-tag">COMBO HI-TECH</span>
+          <h3 class="banner-heading">PHỤ KIỆN CHÍNH HÃNG - MUA 1 TẶNG 1 & ĐỒNG GIÁ TỪ 99.000Đ</h3>
+          <p class="banner-subtext">Củ cáp sạc nhanh GaN, Pin dự phòng công suất lớn, Tai nghe chống ồn chủ động</p>
+        </div>
+      </div>
+
+      <!-- Lưới sản phẩm toàn phần (Full-width 5 cột trên Desktop = 10 sản phẩm chia đều 2 hàng) -->
+      <div id="accessories-grid-container" class="products-grid fullwidth-grid">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="section-footer-link">
+        <a href="products.html?category=accessory" class="btn-see-more">
+          Xem tất cả Phụ kiện & Thiết bị <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         7. GÓC TIN TỨC CÔNG NGHỆ (TECHZONE NEWS)
+         ======================================================================== -->
+    <section class="container tz-news-section" style="margin-bottom: 2.25rem;">
+      <div class="tz-news-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.15rem;">
+        <h3 class="tz-news-heading" style="font-size: 1.35rem; font-weight: 900; text-transform: uppercase;">
+          <i class="fa-solid fa-newspaper" style="color: var(--tz-cyan);"></i> TIN TỨC CÔNG NGHỆ & ĐÁNH GIÁ
+        </h3>
+        <a href="#" class="tz-news-more" style="font-size: 0.85rem; font-weight: 700; color: var(--tz-blue);">
+          Xem thêm bài viết <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="tz-news-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.15rem;">
+        <div class="tz-news-card">
+          <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=400&q=80" alt="iPhone 16" class="tz-news-thumb">
+          <div class="tz-news-body">
+            <span class="tz-news-date"><i class="fa-regular fa-clock"></i> 2 giờ trước</span>
+            <h5 class="tz-news-title">Đánh giá iPhone 16 Pro Max: Phím Camera Control và chip A18 Pro có đáng nâng cấp?</h5>
+            <p class="tz-news-desc">Trải nghiệm thực tế thời lượng pin và khả năng quay video 4K 120fps chuẩn điện ảnh.</p>
+          </div>
+        </div>
+
+        <div class="tz-news-card">
+          <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&q=80" alt="S24 Ultra" class="tz-news-thumb">
+          <div class="tz-news-body">
+            <span class="tz-news-date"><i class="fa-regular fa-clock"></i> 5 giờ trước</span>
+            <h5 class="tz-news-title">5 tính năng Galaxy AI trên S24 Ultra giúp nâng cao hiệu suất làm việc văn phòng</h5>
+            <p class="tz-news-desc">Cách tóm tắt văn bản thông minh và dịch trực tiếp cuộc gọi đa ngôn ngữ chuẩn xác.</p>
+          </div>
+        </div>
+
+        <div class="tz-news-card">
+          <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=400&q=80" alt="ASUS ROG" class="tz-news-thumb">
+          <div class="tz-news-body">
+            <span class="tz-news-date"><i class="fa-regular fa-clock"></i> Hôm qua</span>
+            <h5 class="tz-news-title">Top 4 laptop gaming trang bị card đồ họa RTX 40 series đáng mua nhất năm 2026</h5>
+            <p class="tz-news-desc">Lựa chọn tối ưu cân bằng giữa hiệu năng tản nhiệt, độ phủ màu màn hình và giá thành.</p>
+          </div>
+        </div>
+
+        <div class="tz-news-card">
+          <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&q=80" alt="Marshall" class="tz-news-thumb">
+          <div class="tz-news-body">
+            <span class="tz-news-date"><i class="fa-regular fa-clock"></i> 2 ngày trước</span>
+            <h5 class="tz-news-title">Hướng dẫn nhận biết loa Marshall Emberton II chính hãng phân phối ủy quyền</h5>
+            <p class="tz-news-desc">Những chi tiết tem chống giả và kết nối app Marshall Bluetooth kiểm tra nhanh chóng.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       8. TECHZONE FOOTER (4 CỘT HIỆN ĐẠI)
+       ======================================================================== -->
+  <footer class="tz-footer">
+    <div class="container footer-main-grid">
+      
+      <!-- Cột 1: Thông tin liên hệ & Tổng đài -->
+      <div class="tz-footer-col">
+        <a href="index.html" class="tz-logo" style="color: var(--tz-navy); margin-bottom: 0.85rem;">
+          <div class="tz-logo-chip"><i class="fa-solid fa-microchip"></i></div>
+          <div>Tech<span class="accent" style="color: var(--tz-blue);">Zone</span></div>
+        </a>
+        <p>Hệ thống bán lẻ thiết bị công nghệ chính hãng hàng đầu, tích hợp phân hệ logistics định vị bưu tá và giao hàng hỏa tốc trong 2 giờ.</p>
+        
+        <div class="tz-hotlines">
+          <div class="tz-hotline-row">Tư vấn mua hàng: <strong>1800.6868</strong> (7h30 - 22h00)</div>
+          <div class="tz-hotline-row">Hỗ trợ kỹ thuật: <strong>1800.6869</strong> (8h00 - 21h30)</div>
+          <div class="tz-hotline-row">Bảo hành chính hãng: <strong>1800.6870</strong> (8h00 - 21h00)</div>
+        </div>
+      </div>
+
+      <!-- Cột 2: Chính sách & bảo hành -->
+      <div class="tz-footer-col">
+        <h4>Chính Sách & Quy Định</h4>
+        <div class="tz-footer-links">
+          <a href="#">Chính sách giao hàng siêu tốc 2H</a>
+          <a href="#">Chính sách bảo hành 1 đổi 1 trong 30 ngày</a>
+          <a href="#">Chính sách trả góp 0% lãi suất</a>
+          <a href="#">Bảo mật thông tin khách hàng</a>
+          <a href="#">Quy định hóa đơn điện tử e-VAT</a>
+        </div>
+      </div>
+
+      <!-- Cột 3: Dịch vụ & Tra cứu -->
+      <div class="tz-footer-col">
+        <h4>Dịch Vụ & Tra Cứu</h4>
+        <div class="tz-footer-links">
+          <a href="tracking-detail.html">Tra cứu hành trình vận chuyển GPS</a>
+          <a href="history.html">Quản lý lịch sử đơn mua cá nhân</a>
+          <a href="products.html">Danh mục sản phẩm công nghệ</a>
+          <a href="#">Dịch vụ bảo hành mở rộng TechCare+</a>
+          <a href="#">Hệ thống 86 chi nhánh cửa hàng</a>
+        </div>
+      </div>
+
+      <!-- Cột 4: Phương thức thanh toán & Chứng nhận -->
+      <div class="tz-footer-col">
+        <h4>Phương Thức Thanh Toán</h4>
+        <div class="tz-payment-pills">
+          <span class="tz-pay-tag"><i class="fa-solid fa-money-bill-wave text-success"></i> Tiền mặt COD</span>
+          <span class="tz-pay-tag"><i class="fa-solid fa-qrcode text-primary"></i> VNPAY-QR</span>
+          <span class="tz-pay-tag"><i class="fa-solid fa-wallet" style="color: #a50064;"></i> Ví MoMo</span>
+          <span class="tz-pay-tag"><i class="fa-brands fa-cc-visa text-primary"></i> Visa / Master</span>
+          <span class="tz-pay-tag"><i class="fa-solid fa-percent" style="color: #f59e0b;"></i> Trả góp 0%</span>
+        </div>
+
+        <h4 style="margin-top: 1.35rem;">Chứng Nhận Uy Tín</h4>
+        <div style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; color: #64748b;">
+          <i class="fa-solid fa-shield-halved" style="font-size: 1.6rem; color: #10b981;"></i>
+          <span>Website thương mại điện tử đã đăng ký với <strong>Bộ Công Thương</strong></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom-bar">
+      <div>&copy; 2026 TechZone Technology Ecosystem. Bản quyền thuộc về TechZone Vietnam.</div>
+      <div>Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực</div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
