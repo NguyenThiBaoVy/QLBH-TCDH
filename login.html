@@ -127,6 +127,16 @@
   </style>
 </head>
 <body>
+  <!-- Page Transition Loader -->
+  <div id="pageLoader" class="page-loader-overlay">
+    <div class="loader-spinner-wrap">
+      <div class="loader-spinner"></div>
+      <div class="loader-brand">
+        <span class="loader-dot"></span> TechZone
+      </div>
+    </div>
+  </div>
+
 
   <!-- Header -->
   <header class="tz-header">
@@ -198,9 +208,14 @@
             <label for="login-password">Mật khẩu</label>
             <a href="#" onclick="showToast('Vui lòng liên hệ Hotline 1800.6868 để được cấp lại mật khẩu!', 'info', 'Quên mật khẩu?'); return false;" style="font-size: 0.78rem; color: #0284c7; text-decoration: none;">Quên mật khẩu?</a>
           </div>
-          <div class="tz-input-with-icon">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" id="login-password" placeholder="Nhập mật khẩu của bạn" required>
+          <div class="tz-password-wrapper">
+            <div class="tz-input-with-icon" style="width: 100%;">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" id="login-password" placeholder="Nhập mật khẩu của bạn" required>
+            </div>
+            <button type="button" class="tz-password-toggle" data-target="login-password" title="Ẩn/Hiện mật khẩu">
+              <i class="fa-solid fa-eye"></i>
+            </button>
           </div>
         </div>
 
@@ -267,6 +282,74 @@
       <div>Multi-page Architecture | Hệ thống Bán lẻ & Quản trị Vận đơn</div>
     </div>
   </footer>
+
+    <!-- Google Account Selector Modal -->
+  <div class="tz-modal-overlay" id="tz-google-modal" role="dialog" aria-modal="true" aria-labelledby="tz-google-modal-title">
+    <div class="tz-google-modal-card">
+      <div class="google-modal-header">
+        <img src="images/google-icon.svg" alt="Google" width="32" height="32" class="google-logo">
+        <h3 id="tz-google-modal-title">Đăng nhập bằng Google</h3>
+        <p class="google-sub">Chọn tài khoản Google để tiếp tục đến <strong>TechZone</strong></p>
+      </div>
+
+      <div class="google-account-list">
+        <!-- Account 1 -->
+        <div class="google-account-item" data-fullname="Nguyễn Văn An" data-email="an.nguyen@gmail.com">
+          <div class="google-avatar avatar-blue">A</div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Nguyễn Văn An</div>
+            <div class="google-user-email">an.nguyen@gmail.com</div>
+          </div>
+          <i class="fa-solid fa-angle-right google-arrow"></i>
+        </div>
+
+        <!-- Account 2 -->
+        <div class="google-account-item" data-fullname="Trần Thị Mai" data-email="mai.tran@gmail.com">
+          <div class="google-avatar avatar-purple">M</div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Trần Thị Mai</div>
+            <div class="google-user-email">mai.tran@gmail.com</div>
+          </div>
+          <i class="fa-solid fa-angle-right google-arrow"></i>
+        </div>
+
+        <!-- Account 3: Custom Google Toggle -->
+        <div class="google-account-item google-custom-toggle" id="btn-toggle-custom-google">
+          <div class="google-avatar avatar-gray">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Sử dụng tài khoản khác</div>
+            <div class="google-user-email">Nhập họ tên và Gmail của bạn</div>
+          </div>
+          <i class="fa-solid fa-angle-down google-arrow" id="google-arrow-toggle"></i>
+        </div>
+      </div>
+
+      <!-- Custom Google Input Form -->
+      <form class="google-custom-form" id="form-custom-google" style="display: none;">
+        <div class="google-input-group">
+          <label for="google-custom-name">Họ và tên Google của bạn</label>
+          <input type="text" id="google-custom-name" placeholder="Ví dụ: Lê Hoàng Nam" required>
+        </div>
+        <div class="google-input-group">
+          <label for="google-custom-email">Địa chỉ Email Google (Gmail)</label>
+          <input type="email" id="google-custom-email" placeholder="Ví dụ: nam.le@gmail.com" required>
+        </div>
+        <button type="submit" class="btn-submit-google-custom">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập với tài khoản này
+        </button>
+      </form>
+
+      <div class="google-modal-footer">
+        <button type="button" class="btn-cancel-google" id="btn-close-google-modal">Hủy bỏ</button>
+        <span class="google-secure-badge"><i class="fa-solid fa-shield-halved"></i> Google Identity Services</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container"></div>
 
   <!-- Main JS -->
   <script src="js/main.js"></script>

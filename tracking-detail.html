@@ -12,6 +12,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Page Transition Loader -->
+  <div id="pageLoader" class="page-loader-overlay">
+    <div class="loader-spinner-wrap">
+      <div class="loader-spinner"></div>
+      <div class="loader-brand">
+        <span class="loader-dot"></span> TechZone
+      </div>
+    </div>
+  </div>
+
 
   <!-- TechZone Header -->
   <header class="tz-header">
@@ -29,29 +39,30 @@
               <div class="tz-dropdown-header">
                 <i class="fa-solid fa-map-location-dot"></i>
                 <span>Chọn khu vực nhận hàng:</span>
+                <button type="button" class="tz-location-close-btn location-modal-close" aria-label="Đóng chọn khu vực" onclick="closeLocationModal()">&times;</button>
               </div>
               <ul class="tz-location-list">
-                <li class="tz-location-item" data-city="Hà Nội" role="option">
+                <li class="tz-location-item" data-city="Hà Nội" onclick="selectLocation('Hà Nội')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> Hà Nội</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
-                <li class="tz-location-item" data-city="TP. Hồ Chí Minh" role="option">
+                <li class="tz-location-item" data-city="TP. Hồ Chí Minh" onclick="selectLocation('TP. Hồ Chí Minh')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> TP. Hồ Chí Minh</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
-                <li class="tz-location-item" data-city="Đà Nẵng" role="option">
+                <li class="tz-location-item" data-city="Đà Nẵng" onclick="selectLocation('Đà Nẵng')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> Đà Nẵng</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
-                <li class="tz-location-item" data-city="Cần Thơ" role="option">
+                <li class="tz-location-item" data-city="Cần Thơ" onclick="selectLocation('Cần Thơ')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> Cần Thơ</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
-                <li class="tz-location-item" data-city="Hải Phòng" role="option">
+                <li class="tz-location-item" data-city="Hải Phòng" onclick="selectLocation('Hải Phòng')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> Hải Phòng</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
-                <li class="tz-location-item" data-city="Đồng Nai" role="option">
+                <li class="tz-location-item" data-city="Đồng Nai" onclick="selectLocation('Đồng Nai')" role="option">
                   <span class="tz-city-name"><i class="fa-solid fa-building"></i> Đồng Nai</span>
                   <i class="fa-solid fa-check tz-city-check"></i>
                 </li>
@@ -88,42 +99,45 @@
           <span class="tz-title-sep">|</span> Chi Tiết Vận Chuyển Hỏa Tốc
         </div>
 
-        <div class="tz-header-actions">
-          <!-- User Account Button (Đăng nhập / Tên người dùng) -->
-          <div class="tz-user-wrapper" id="tz-user-wrapper">
-            <a href="login.html" class="tz-user-btn" id="tz-user-btn" title="Tài khoản">
+                <!-- Action Group on the Right (Tách rời độc lập Tài khoản và Giỏ hàng, khoảng cách 16px) -->
+        <div class="tz-header-actions header-right-actions">
+          
+          <!-- Khối Tài khoản độc lập -->
+          <div class="tz-user-wrapper user-account-wrapper" id="tz-user-wrapper">
+            <a href="login.html" class="tz-user-btn" id="tz-user-btn" title="Tài khoản" onclick="if(window.toggleUserDropdown) { toggleUserDropdown(event); }">
               <i class="fa-solid fa-circle-user"></i>
               <div class="meta">
                 <span class="sub">Tài khoản</span>
                 <span id="tz-user-name-display">Đăng nhập</span>
               </div>
             </a>
-            <div class="tz-user-dropdown" id="tz-user-dropdown">
+            <div class="tz-user-dropdown user-dropdown-menu" id="tz-user-dropdown">
               <div class="tz-user-dropdown-header">
                 <i class="fa-solid fa-user-check"></i>
                 <span id="tz-dropdown-greeting">Xin chào, Bạn!</span>
               </div>
               <a href="history.html" class="tz-user-dropdown-item">
-                <i class="fa-solid fa-clock-rotate-left"></i> Đơn mua của tôi
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Đơn mua của tôi</span>
               </a>
-              <a href="#" class="tz-user-dropdown-item" id="tz-btn-profile-info">
-                <i class="fa-solid fa-id-card"></i> Thông tin tài khoản
+              <a href="vouchers.html" class="tz-user-dropdown-item">
+                <span class="tz-dropdown-item-icon">🎟️</span>
+                <span>Kho voucher của tôi</span>
+                <span class="tz-dropdown-voucher-badge" id="userVoucherBadge" style="display: none;"></span>
+              </a>
+              <a href="profile.html" class="tz-user-dropdown-item" id="tz-btn-profile-info">
+                <i class="fa-solid fa-id-card"></i>
+                <span>Thông tin tài khoản</span>
               </a>
               <div class="tz-user-dropdown-item logout" id="tz-btn-logout">
-                <i class="fa-solid fa-arrow-right-from-bracket"></i> Đăng xuất
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span>Đăng xuất</span>
               </div>
             </div>
           </div>
 
-          <a href="history.html" class="tz-nav-btn active" title="Đơn mua của bạn">
-            <i class="fa-solid fa-box-archive"></i>
-            <div class="meta">
-              <span class="sub">Quản lý</span>
-              <span>Đơn mua</span>
-            </div>
-          </a>
-
-          <a href="checkout.html" class="tz-nav-btn tz-cart-btn" title="Giỏ hàng">
+          <!-- Nút Giỏ hàng độc lập hoàn toàn -->
+          <a href="checkout.html" class="tz-nav-btn tz-cart-btn header-cart-btn" title="Xem giỏ hàng TechZone">
             <i class="fa-solid fa-cart-shopping"></i>
             <div class="meta">
               <span class="sub">Giỏ hàng</span>
@@ -131,6 +145,7 @@
             </div>
             <span class="tz-cart-badge">0</span>
           </a>
+
         </div>
       </div>
     </div>
@@ -140,12 +155,11 @@
   <main class="main-content" style="background-color: #f5f5f5; min-height: 80vh; padding-bottom: 2.5rem;">
     <div class="container" style="padding-top: 1.5rem; max-width: 1080px;">
       
-      <!-- Top Navigation & Sample Switcher -->
+      <!-- Top Navigation -->
       <div class="spx-top-nav">
         <a href="history.html" class="spx-back-btn" title="Quay lại danh sách đơn mua">
           <i class="fa-solid fa-arrow-left"></i> Quay lại danh sách đơn mua
         </a>
-        <div id="tracking-sample-pills"></div>
       </div>
 
       <!-- 1. KHỐI TỔNG QUAN & COUNTDOWN (SHOPEE EXPRESS STYLE) -->
@@ -274,6 +288,86 @@
       <div>&copy; 2026 TechZone Logistics. Module theo dõi đơn hàng với CSS Pseudo-elements & Real-time Countdown.</div>
     </div>
   </footer>
+
+    <!-- Custom Center Modal: Xác nhận đăng xuất -->
+  <div class="tz-modal-overlay" id="tz-logout-modal" role="dialog" aria-modal="true" aria-labelledby="tz-logout-title">
+    <div class="tz-modal-content">
+      <div class="tz-modal-icon-badge">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </div>
+      <h3 class="tz-modal-title" id="tz-logout-title">Xác nhận đăng xuất</h3>
+      <p class="tz-modal-desc">Bạn có chắc chắn muốn đăng xuất khỏi tài khoản này không?</p>
+      <div class="tz-modal-btn-group">
+        <button type="button" class="tz-btn-modal-cancel" id="tz-btn-cancel-logout">Hủy bỏ</button>
+        <button type="button" class="tz-btn-modal-logout" id="tz-btn-confirm-logout">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Google Account Selector Modal -->
+  <div class="tz-modal-overlay" id="tz-google-modal" role="dialog" aria-modal="true" aria-labelledby="tz-google-modal-title">
+    <div class="tz-google-modal-card">
+      <div class="google-modal-header">
+        <img src="images/google-icon.svg" alt="Google" width="32" height="32" class="google-logo">
+        <h3 id="tz-google-modal-title">Đăng nhập bằng Google</h3>
+        <p class="google-sub">Chọn tài khoản Google để tiếp tục đến <strong>TechZone</strong></p>
+      </div>
+
+      <div class="google-account-list">
+        <!-- Account 1 -->
+        <div class="google-account-item" data-fullname="Nguyễn Văn An" data-email="an.nguyen@gmail.com">
+          <div class="google-avatar avatar-blue">A</div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Nguyễn Văn An</div>
+            <div class="google-user-email">an.nguyen@gmail.com</div>
+          </div>
+          <i class="fa-solid fa-angle-right google-arrow"></i>
+        </div>
+
+        <!-- Account 2 -->
+        <div class="google-account-item" data-fullname="Trần Thị Mai" data-email="mai.tran@gmail.com">
+          <div class="google-avatar avatar-purple">M</div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Trần Thị Mai</div>
+            <div class="google-user-email">mai.tran@gmail.com</div>
+          </div>
+          <i class="fa-solid fa-angle-right google-arrow"></i>
+        </div>
+
+        <!-- Account 3: Custom Google Toggle -->
+        <div class="google-account-item google-custom-toggle" id="btn-toggle-custom-google">
+          <div class="google-avatar avatar-gray">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <div class="google-user-meta">
+            <div class="google-user-name">Sử dụng tài khoản khác</div>
+            <div class="google-user-email">Nhập họ tên và Gmail của bạn</div>
+          </div>
+          <i class="fa-solid fa-angle-down google-arrow" id="google-arrow-toggle"></i>
+        </div>
+      </div>
+
+      <!-- Custom Google Input Form -->
+      <form class="google-custom-form" id="form-custom-google" style="display: none;">
+        <div class="google-input-group">
+          <label for="google-custom-name">Họ và tên Google của bạn</label>
+          <input type="text" id="google-custom-name" placeholder="Ví dụ: Lê Hoàng Nam" required>
+        </div>
+        <div class="google-input-group">
+          <label for="google-custom-email">Địa chỉ Email Google (Gmail)</label>
+          <input type="email" id="google-custom-email" placeholder="Ví dụ: nam.le@gmail.com" required>
+        </div>
+        <button type="submit" class="btn-submit-google-custom">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng nhập với tài khoản này
+        </button>
+      </form>
+
+      <div class="google-modal-footer">
+        <button type="button" class="btn-cancel-google" id="btn-close-google-modal">Hủy bỏ</button>
+        <span class="google-secure-badge"><i class="fa-solid fa-shield-halved"></i> Google Identity Services</span>
+      </div>
+    </div>
+  </div>
 
   <div class="toast-container"></div>
   <script src="js/main.js"></script>
