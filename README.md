@@ -1,1 +1,1 @@
-# QLBH-TCDH - Quản Lý Bán Hàng và Tra Cứu Đơn Hàng
+# QLBH-TCDH - Website bán hàng công nghệ kết hợp hệ thống theo dõi đơn hàng và vận chuyển
