@@ -79,6 +79,27 @@
 73. [Prompt 73: Sửa lỗi CSS bảng "CHỌN KHU VỰC" (Location / Province Modal) trên mobile (Z-Index, Backdrop, Nút đóng ✕ & Ẩn CSKH)](#prompt-73)
 74. [Prompt 74: Bổ sung logic JavaScript xử lý chọn tỉnh thành khu vực nhận hàng (Location Picker) & Tự động đồng bộ Topbar](#prompt-74)
 75. [Prompt 75: Sửa lại JavaScript và CSS cho bảng "CHỌN KHU VỰC NHẬN HÀNG" (Location Modal): Đóng triệt để qua closeLocationModal() & Gỡ bỏ Hover Trap](#prompt-75)
+76. [Prompt 76: Sửa lại logic hiển thị menu tài khoản trong main.js và header khi chưa đăng nhập (Ẩn triệt để dropdown & Khóa hover)](#prompt-76)
+77. [Prompt 77: Bổ sung Modal "SỔ ĐỊA CHỈ NHẬN HÀNG" (Shopee Style) & Logic xử lý đổi địa chỉ trong trang thanh toán (checkout.html, main.js & style.css)](#prompt-77)
+78. [Prompt 78: Cập nhật đồng bộ khối Footer 4 cột & Chân trang đáy bản quyền Thanh Toàn - Bảo Vy cho toàn bộ các file HTML](#prompt-78)
+79. [Prompt 79: Sửa HTML & CSS cho Cột 1 Footer - Khắc phục lỗi vỡ hàng dòng "Bảo hành chính hãng", đồng bộ font Inter và mở rộng cột brand](#prompt-79)
+80. [Prompt 80: Humanize UI/UX Refactor - Loại bỏ text bài tập, sửa dứt điểm icon ô vuông bằng SVG inline, tinh chỉnh font Inter & bo góc card](#prompt-80)
+81. [Prompt 81: Rà soát & Chuẩn hóa De-AI / Humanize UI-UX - Dọn sạch text template, khắc phục hình ảnh/icon, nhân bản hóa tương tác Chatbot & Zero Mock Data](#prompt-81)
+82. [Prompt 82: Cập nhật Header TechZone - Khắc phục triệt để lỗi icon ô vuông [▯] qua Font Awesome 6.5.1 & Đổi tone màu Header E-commerce chuẩn](#prompt-82)
+83. [Prompt 83: Thay đổi toàn bộ bảng màu Header, Topbar sang Đỏ CellphoneS/TopZone & Đại tu Khối Flash Sale rực lửa chuẩn E-commerce](#prompt-83)
+84. [Prompt 84: Cập nhật bảng màu Header Đen Tuyền (#0f1115), Nút bấm Đỏ Đô (#b91c1c) & Thân trang Nền Trắng Tinh (#ffffff)](#prompt-84)
+85. [Prompt 85: Đồng bộ hóa toàn bộ bảng màu Website theo 3 tone ĐEN - ĐỎ ĐÔ ĐẬM (#8b0000) - TRẮNG & Khắc phục triệt để lỗi Font Icon [▯]](#prompt-85)
+86. [Prompt 86: Tinh chỉnh giao diện Hồ Sơ Cá Nhân (profile.html) & Header Home chuẩn Enterprise Retail - Chuẩn hóa Avatar, 3 Thẻ thống kê Minimalist, Sidebar & Form](#prompt-86)
+87. [Prompt 87: Tinh giản toàn bộ icon/emoji trong Quản lý đơn hàng (history.html) & style.css - Chuẩn hóa Tabs, Header đơn, Strip vận chuyển, Nút bấm & Bỏ icon khiên lỗi](#prompt-87)
+88. [Prompt 88: Refactor toàn diện website TechZone - Đồng bộ 100% Header & Footer, Hệ màu Đen Than Chì (#11141a) - Đỏ Đô Đậm (#991b1b) - Trắng & Tinh giản chi tiết AI/Emoji rác](#prompt-88)
+89. [Prompt 89: Đồng bộ hóa 100% Header và Footer toàn bộ các trang chuẩn Retail - Khử sạch icon rác Cột 2/3 Footer & Chống đè nút CSKH](#prompt-89)
+90. [Prompt 90: Thu gọn Header Slim Compact, Sửa icon lỗi [▯] Footer, Shipping Strip xám thanh lịch & Chuẩn hóa Voucher](#prompt-90)
+91. [Prompt 91: Đồng bộ hóa toàn diện 8 điểm giao diện TechZone - Logo trắng tinh, Tab đơn hàng chữ trắng, Tiến trình vận chuyển chuẩn màu, Loading đen & Triệt tiêu xanh](#prompt-91)
+92. [Prompt 92: Sửa dứt điểm 7 lỗi giao diện - Popup Voucher, Khung Thanh Toán, Login/Register Khử Xanh, Flashsale, Footer Copyright, Timeline Icons & Responsive Mobile First](#prompt-92)
+93. [Prompt 93: Chuẩn hóa Flashsale Full Đỏ (#991b1b), Icon Checkout Xám (#64748b), Footer Bản Quyền Dạt Trái, Logo Login Đen Tuyền / Register Trắng & Triệt Tiêu Nút Xanh Mobile](#prompt-93)
+100. [Prompt 94: Tinh chỉnh Media Queries Responsive Mobile (@media (max-width: 768px)) - Topbar Gọn Gàng, Search Pill 20px, Flashsale 1 Dòng & Form Profile Né Nút CSKH](#prompt-94)
+101. [Prompt 95: Responsive Profile Mobile (@media (max-width: 768px)) - Khắc Phục Dải 3 Thẻ Tràn Viền, Căn Chỉnh Container Card & Né Nút CSKH 42px](#prompt-95)
+102. [Prompt 96: Thu Gọn Khoảng Cách Giới Tính & Sổ Địa Chỉ Nhận Hàng Trên Mobile (@media (max-width: 768px))](#prompt-96)
 
 
 
@@ -2692,3 +2713,1081 @@ Hãy sửa lại JavaScript và CSS cho bảng "CHỌN KHU VỰC NHẬN HÀNG" (
 
 Cung cấp đoạn mã JS và CSS cập nhật để dán vào dự án!
 ```
+
+
+---
+
+## <a id="prompt-76"></a>Prompt 76: Sửa lại logic hiển thị menu tài khoản trong main.js và header khi chưa đăng nhập (Ẩn triệt để dropdown & Khóa hover)
+
+- **Thời gian gửi:** `2026-10-23T20:47:54+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy sửa lại logic hiển thị menu tài khoản trong main.js và header trên toàn bộ các trang:
+
+1. HIỆN TƯỢNG LỖI:
+- Khi người dùng CHƯA ĐĂNG NHẬP (nút hiển thị chữ "Tài khoản / Đăng nhập"), khi di chuột vào vẫn tự động bung bảng menu dropdown "Xin chào, Nguyễn Văn An!".
+
+2. YÊU CẦU XỬ LÝ CHUẨN XÁC:
+- Trong JavaScript (hàm renderHeaderAuth hoặc syncUI):
+  + Kiểm tra `const user = JSON.parse(localStorage.getItem('currentUser'));`
+  + TRƯỜNG HỢP CHƯA ĐĂNG NHẬP (!user):
+    * Nút tài khoản: hiển thị text "Tài khoản / Đăng nhập", gán href="login.html".
+    * XÓA BỎ hoặc ẨN TRIỆT ĐỂ thẻ dropdown menu (.user-dropdown-menu) khỏi DOM hoặc gán class 'is-guest' / style "display: none !important;".
+    * Tuyệt đối không cho phép hover hay click bung ra menu chào hỏi hay đơn mua.
+  + TRƯỜNG HỢP ĐÃ ĐĂNG NHẬP (user tồn tại):
+    * Nút tài khoản: hiển thị "Tài khoản / [Tên khách]", gán href="profile.html".
+    * Cho phép dropdown menu hoạt động bình thường, hiển thị đúng tên người dùng hiện tại và số lượng voucher thực tế.
+
+3. ĐIỀU CHỈNH CSS (style.css):
+- Bổ sung bộ chọn:
+  /* Khi chưa đăng nhập thì hover vào nút tài khoản không được hiện menu */
+  .user-account-wrapper.not-logged-in .user-dropdown-menu,
+  .user-account-wrapper:not(.logged-in) .user-dropdown-menu {
+    display: none !important;
+    pointer-events: none !important;
+  }
+
+Cung cấp đoạn mã JavaScript cập nhật cho main.js và CSS tương ứng!
+```
+
+
+---
+
+## <a id="prompt-77"></a>Prompt 77: Bổ sung Modal "SỔ ĐỊA CHỈ NHẬN HÀNG" (Shopee Style) & Logic xử lý đổi địa chỉ trong trang thanh toán (checkout.html, main.js & style.css)
+
+- **Thời gian gửi:** `2026-10-23T21:01:00+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy bổ sung Modal "SỔ ĐỊA CHỈ NHẬN HÀNG" và logic xử lý đổi địa chỉ trong trang thanh toán (checkout.html & main.js):
+
+1. HIỆN TƯỢNG LỖI (Hình ảnh đính kèm):
+- Trong mục "1. Thông Tin Nhận Hàng", người dùng bấm vào nút "Đổi địa chỉ >" hoặc nút "Chọn từ sổ địa chỉ ( 1 )" thì không có phản hồi gì, không bật popup chọn địa chỉ.
+
+2. CÁCH XỬ LÝ CHUẨN XÁC (Shopee Style):
+- Bổ sung cấu trúc Modal Sổ Địa Chỉ (#addressBookModal):
+  + Lớp phủ mờ (backdrop/overlay) có z-index: 999999.
+  + Hộp thoại gồm:
+    * Tiêu đề: "📍 Sổ Địa Chỉ Của Tôi" kèm nút đóng (✕).
+    * Danh sách các địa chỉ đã lưu của user (lấy từ localStorage theo user hiện tại). Mỗi mục hiển thị rõ: Tên, SĐT, Địa chỉ chi tiết, Tỉnh/Thành, nhãn [Mặc định] và radio/checkbox chọn.
+    * Nút bấm: "+ Thêm địa chỉ mới".
+    * Nút hành động: "Xác nhận chọn" và "Hủy".
+- Logic JavaScript:
+  + Hàm openAddressModal(): Mở modal khi bấm "Đổi địa chỉ >" hoặc "Chọn từ sổ địa chỉ".
+  + Hàm closeAddressModal(): Đóng modal khi bấm nút ✕, nút Hủy hoặc click ra ngoài lớp nền mờ.
+  + Hàm selectAddress(addressId): Khi chọn một địa chỉ bất kỳ và bấm "Xác nhận" (hoặc click chọn), tự động:
+    * Cập nhật thông tin vào khung tóm tắt địa chỉ xanh ở trên (#active-address-summary).
+    * Điền tự động vào các ô input form bên dưới (#cust-name, #cust-phone, #cust-city, #cust-address).
+    * Đóng modal ngay lập tức.
+  + Nếu user chưa có danh sách địa chỉ trong localStorage, tự khởi tạo danh sách mẫu từ thông tin hiện tại: "Nguyễn Văn An | 0988123456 | Số 18 Phố Huế, P. Hàng Bài, Q. Hoàn Kiếm, Hà Nội".
+
+Cung cấp đoạn mã HTML, CSS và JavaScript hoàn chỉnh để cập nhật!
+```
+
+### Các bước đã xử lý:
+1. **Xác định nguyên nhân gốc rễ:**
+   - Trong `css/style.css`, `.tz-modal-overlay` được quy định hiển thị thông qua class `.show` (`opacity: 1 !important; visibility: visible !important;`). Tuy nhiên, hàm cũ trong `js/main.js` chỉ `classList.add('active')` mà thiếu class `.show`, khiến modal luôn ở trạng thái ẩn và `pointer-events: none`.
+   - Nút "Chọn từ sổ địa chỉ" và nút "Đổi địa chỉ >" chưa được gắn hàm toàn cục `openAddressModal()`.
+   - Chưa có cấu trúc Modal chuẩn Shopee Style với radio chọn và các nút hành động "Xác nhận chọn" / "Hủy".
+2. **Cập nhật `checkout.html`:**
+   - Gán `onclick="openAddressModal()"` cho cả `#btn-open-address-modal` và `#btn-change-addr-link`.
+   - Hiển thị sẵn khung tóm tắt địa chỉ xanh `#active-address-summary` với địa chỉ mặc định `Nguyễn Văn An | 0988123456 | Số 18 Phố Huế, P. Hàng Bài, Q. Hoàn Kiếm, Hà Nội` và badge số lượng `( 1 )`.
+   - Bổ sung cấu trúc Modal `#addressBookModal` (Shopee Style) với Header "📍 Sổ Địa Chỉ Của Tôi" + nút ✕, Body chứa `#address-book-list`, nút "+ Thêm địa chỉ mới", form thêm địa chỉ có toggle, Footer chứa nút "Hủy" và "Xác nhận chọn".
+   - Di chuyển thẻ `<script src="js/main.js"></script>` xuống cuối `<body>` sau các Modal.
+3. **Cập nhật `js/main.js`:**
+   - Hoàn thiện `Auth.getUserAddresses` và `Auth.addAddress`: Tự động khởi tạo dữ liệu mẫu nếu chưa có (`Nguyễn Văn An | 0988123456 | Số 18 Phố Huế, P. Hàng Bài, Q. Hoàn Kiếm, Hà Nội`), đồng bộ lưu vào `techzone_user_addresses` và `user_addresses_${user.email}`.
+   - Viết các hàm toàn cục: `openAddressModal()`, `closeAddressModal()`, `selectAddress(addressId)`, `selectAddressRadio(addrId)`, `confirmSelectedAddress()`, `toggleAddAddressForm(show)`, `saveNewAddress()`, `setDefaultAddressAction(addrId)`.
+   - Hàm `selectAddress(addressId)` cập nhật chính xác banner xanh `#active-address-summary`, điền tự động `#cust-name`, `#cust-phone`, `#cust-city`, `#cust-address`, hiển thị toast thông báo và đóng modal ngay lập tức.
+   - Thêm sự kiện đóng modal khi click ra ngoài lớp nền mờ hoặc nhấn phím `Escape`.
+4. **Cập nhật `css/style.css`:**
+   - Định kiểu cho `#addressBookModal` với `z-index: 999999 !important;`, animation mở mượt mà.
+   - Thiết kế thẻ địa chỉ Shopee style `.address-card-shopee` với radio chọn, hiệu ứng viền xanh khi active, nhãn `[Mặc định]` cam/đỏ Shopee.
+   - Định kiểu nút "+ Thêm địa chỉ mới", form thêm địa chỉ, nút hành động Footer và hỗ trợ hoàn hảo responsive mobile (< 640px).
+
+
+---
+
+## <a id="prompt-78"></a>Prompt 78: Cập nhật đồng bộ khối Footer 4 cột & Chân trang đáy bản quyền Thanh Toàn - Bảo Vy cho toàn bộ các file HTML
+
+- **Thời gian gửi:** `2026-10-23T21:20:03+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy cập nhật đồng bộ khối Footer cho toàn bộ các file HTML trong dự án (index.html, checkout.html, vouchers.html, history.html, profile.html, product-detail.html):
+
+1. NỘI DUNG 4 CỘT FOOTER:
+- Cột 1: Logo TechZone xanh, đoạn giới thiệu hệ thống bán lẻ và 3 dòng Hotline (Tư vấn 1800.6868, Kỹ thuật 1800.6869, Bảo hành 1800.6870).
+- Cột 2: CHÍNH SÁCH & QUY ĐỊNH (Giao hàng 2H, Bảo hành 30 ngày, Trả góp 0%, Bảo mật thông tin, Hóa đơn điện tử e-VAT).
+- Cột 3: DỊCH VỤ & TRA CỨU (Tra cứu GPS, Lịch sử đơn mua, Danh mục sản phẩm, TechCare+, 86 chi nhánh).
+- Cột 4: PHƯƠNG THỨC THANH TOÁN (Tiền mặt COD, VNPAY-QR, Ví MoMo, Visa/Master, Trả góp 0%) và CHỨNG NHẬN UY TÍN (Icon khiên xanh - Đã đăng ký với Bộ Công Thương).
+
+2. DÒNG CHÂN TRANG ĐÁY (FOOTER BOTTOM):
+- Góc bên trái: Ghi chính xác dòng chữ: "© 2026 Bản quyền thuộc Thanh Toàn - Bảo Vy".
+- Góc bên phải: "Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực".
+- Căn lề padding-left hợp lý để nút tròn CSKH không che khuất dòng chữ bản quyền.
+
+Cung cấp đoạn mã HTML và CSS chuẩn để dán vào dự án!
+```
+
+### Các bước đã xử lý:
+1. **Chuẩn hóa cấu trúc HTML Footer 4 cột đồng bộ:**
+   - **Cột 1:** Logo TechZone xanh chip vi mạch, đoạn giới thiệu hệ thống bán lẻ và 3 dòng hotline (Tư vấn 1800.6868, Kỹ thuật 1800.6869, Bảo hành 1800.6870).
+   - **Cột 2: CHÍNH SÁCH & QUY ĐỊNH:** 5 liên kết chính sách (Giao hàng siêu tốc 2H, Bảo hành 1 đổi 1 30 ngày, Trả góp 0%, Bảo mật thông tin, Hóa đơn điện tử e-VAT).
+   - **Cột 3: DỊCH VỤ & TRA CỨU:** 5 liên kết điều hướng (Tra cứu GPS tracking-detail.html, Lịch sử đơn mua history.html, Danh mục sản phẩm products.html, TechCare+, 86 chi nhánh).
+   - **Cột 4: PHƯƠNG THỨC THANH TOÁN & CHỨNG NHẬN:** 5 tag thanh toán (Tiền mặt COD, VNPAY-QR, MoMo, Visa/Master, Trả góp 0%) và box chứng nhận khiên xanh Đã đăng ký với Bộ Công Thương.
+   - **Dòng chân trang đáy (Footer Bottom):**
+     * Góc bên trái (`.footer-copyright-left`): `"© 2026 Bản quyền thuộc Thanh Toàn - Bảo Vy"`.
+     * Góc bên phải (`.footer-meta-right`): `"Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực"`.
+2. **Cập nhật đồng bộ trên toàn bộ các trang HTML:**
+   - `index.html`, `checkout.html`, `vouchers.html`, `history.html`, `profile.html`, `product-detail.html`, `products.html`, `tracking-detail.html`, `register.html`, `complete-profile.html`, và `login.html`.
+3. **Điều chỉnh CSS trong `css/style.css`:**
+   - Căn lề `padding-left: 80px !important;` trên Desktop và `padding-left: 64px !important;` trên Mobile cho `.footer-copyright-left`, đảm bảo nút tròn CSKH nổi ở góc dưới bên trái (`left: 20px`, rộng 50-60px / mobile 44px) hoàn toàn không che khuất dòng chữ bản quyền.
+   - Thêm responsive linh hoạt cho lưới 4 cột (chuyển sang 2 cột trên Tablet < 992px và 1 cột trên Mobile < 576px).
+
+
+---
+
+## <a id="prompt-79"></a>Prompt 79: Sửa HTML & CSS cho Cột 1 Footer - Khắc phục lỗi vỡ hàng dòng "Bảo hành chính hãng", đồng bộ font Inter và mở rộng cột brand
+
+- **Thời gian gửi:** `2026-10-23T21:30:04+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy sửa lại HTML và CSS cho cột 1 của Footer (khối thông tin liên hệ TechZone) trong toàn bộ các trang:
+
+1. KHẮC PHỤC LỖI VỠ HÀNG Ở DÒNG "BẢO HÀNH CHÍNH HÃNG" (Hình ảnh đính kèm):
+- Hiện tại dòng "Bảo hành chính hãng: 1800.6870 (8h00 - 21h00)" đang bị rớt dòng và tách chữ sang hai mép lề.
+- ĐỒNG BỘ CẤU TRÚC: Cả 3 dòng hotline phải hiển thị trên một hàng thẳng tắp từ trái qua phải, cấu trúc giống hệt nhau:
+  [Icon] + [Tên dịch vụ:] + [Số điện thoại in đậm màu xanh] + [Khung giờ]:
+  • 📞 Tư vấn mua hàng: 1800.6868 (7h30 - 22h00)
+  • 🎧 Hỗ trợ kỹ thuật: 1800.6869 (8h00 - 21h30)
+  • 🛠️ Bảo hành chính hãng: 1800.6870 (8h00 - 21h00)
+- CSS dòng hotline (.hotline-item / .footer-hotline-row):
+  `display: flex; align-items: center; gap: 6px; white-space: nowrap; flex-wrap: wrap; margin-bottom: 8px; font-size: 13px;`
+
+2. ĐỒNG BỘ FONT CHỮ TOÀN BỘ FOOTER:
+- Áp dụng font chữ hiện đại, rõ nét, không bị lỗi gãy nét chữ tiếng Việt:
+  `font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;`
+- Căn chỉnh độ rộng cột 1 (Col Brand): Đặt `min-width: 290px;` hoặc mở rộng tỉ lệ grid cột 1 trong footer lên `1.4fr` để chữ không bị co ép rớt dòng.
+
+Cung cấp đoạn HTML cột 1 và CSS sửa lỗi tương ứng!
+```
+
+### Các bước đã xử lý:
+1. **Chuẩn hóa cấu trúc HTML Cột 1 Footer:**
+   - Cả 3 dòng hotline được chuẩn hóa đồng bộ với các class `.hotline-item`, `.footer-hotline-row`, `.tz-hotline-row`.
+   - Cấu trúc từng dòng chuẩn: `[Icon] + <span>Tên dịch vụ:</span> + <strong>1800.xxxx</strong> + <span>(Khung giờ)</span>`.
+   - Cập nhật đồng bộ trên toàn bộ 10 file HTML: `index.html`, `checkout.html`, `vouchers.html`, `history.html`, `profile.html`, `product-detail.html`, `products.html`, `tracking-detail.html`, `register.html`, và `complete-profile.html`.
+2. **Cập nhật CSS trong `css/style.css`:**
+   - Áp dụng font chữ Inter hiện đại cho toàn bộ footer (`.tz-footer, .tz-footer *`):
+     `font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;`
+   - Mở rộng tỉ lệ grid cột 1 lên `1.42fr` trong `.footer-main-grid` (`grid-template-columns: 1.42fr 1fr 1.05fr 1.15fr !important;`).
+   - Thiết lập `min-width: 290px !important;` cho `.tz-footer-col.footer-col-brand` và `.tz-footer-col:first-child` để loại bỏ hoàn toàn hiện tượng co ép chữ.
+   - Thêm quy tắc `white-space: nowrap !important; flex-wrap: nowrap !important; font-size: 13px !important; gap: 6px !important;` cho `.hotline-item, .footer-hotline-row, .tz-hotline-row` giúp dòng số điện thoại và khung giờ luôn nằm thẳng hàng, không bị tách dòng hay giãn lề.
+   - Responsive linh hoạt cho mobile (`< 576px`) cho phép wrap tự nhiên tránh tràn màn hình.
+
+
+---
+
+## <a id="prompt-80"></a>Prompt 80: Humanize UI/UX Refactor - Loại bỏ text bài tập, sửa dứt điểm icon ô vuông bằng SVG inline, tinh chỉnh font Inter & bo góc card
+
+- **Thời gian gửi:** `2026-10-23T21:40:15+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy thực hiện một đợt Refactor "Humanize UI/UX" cho toàn bộ website TechZone để loại bỏ hoàn toàn cảm giác website mẫu/AI tạo, đưa giao diện về chuẩn sàn thương mại điện tử chuyên nghiệp (như CellphoneS, Viettel Store, Thế Giới Di Động):
+
+1. DỌN DẸP TOÀN BỘ TEXT LỘ BÀI TẬP / AI TEMPLATE:
+- Xóa bỏ ngay các cụm từ lộ liễu:
+  + Trong history.html: Bỏ chữ "(Shopee Style)" ở breadcrumb, chỉ để: "Trang chủ / Quản lý đơn hàng".
+  + Trong footer tất cả các trang: Bỏ hoàn toàn dòng kỹ thuật "Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực".
+  + Đổi dòng bản quyền thành chuẩn doanh nghiệp: "© 2026 TechZone Vietnam. Bản quyền thuộc Thanh Toàn - Bảo Vy."
+
+2. SỬA TRIỆT ĐỂ LỖI ICON Ô VUÔNG BỊ LỖI (Hình 3 & 4):
+- Ở cột "Chính sách & Quy định", "Dịch vụ & Tra cứu", "Phương thức thanh toán":
+  + Thay toàn bộ các ký tự lạ gây lỗi hiển thị thành ô vuông [▯] bằng icon SVG inline đơn giản, đồng màu (#64748b) hoặc dùng thẻ danh sách chấm tròn tinh tế.
+  + Logo TechZone: Dùng chip vi mạch vector SVG sắc nét, loại bỏ khung chữ TZ bị lệch font.
+
+3. TINH CHỈNH GIAO DIỆN PRODUCTION-READY:
+- Đổi màu xanh chủ đạo: Chuyển từ màu xanh gắt sang tông xanh dịu mắt, sang trọng (#0066cc hoặc #0071e3).
+- Nút "Kho Voucher" ở history.html: Chuyển thành link viền xám mảnh gọn gàng, bỏ khung cam placeholder.
+- Giảm bán kính bo góc card từ 14px xuống 8px - 10px chuẩn UI chuyên nghiệp, viền border mờ 1px (#e5e7eb), bỏ viền xanh nhạt.
+- Nhúng Google Fonts Inter vào <head> toàn bộ các trang để hiển thị tiếng Việt sắc nét, triệt tiêu gãy nét.
+
+Cung cấp đoạn mã HTML và CSS chuẩn hoá để hoàn tất nâng cấp!
+```
+
+### Các bước đã xử lý:
+1. **Dọn dẹp triệt để text bài tập & AI template:**
+   - Trong `history.html`: Chỉnh breadcrumb thành `Trang chủ / Quản lý đơn hàng` (loại bỏ hoàn toàn tiền tố "(Shopee Style)"). Nút Kho Voucher chuyển thành link viền xám mảnh kèm icon SVG chuyên nghiệp. Sửa lại tab bảo hành với icon khiên bảo vệ chuẩn (`<i class="fa-solid fa-shield-halved"></i> Tra cứu bảo hành`), xóa bỏ ký tự `???`.
+   - Trong Footer của toàn bộ 11 file HTML: Xóa bỏ hoàn toàn dòng kỹ thuật `"Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực"`.
+   - Dòng bản quyền đáy được đổi chuẩn doanh nghiệp: `"© 2026 TechZone Vietnam. Bản quyền thuộc Thanh Toàn - Bảo Vy."`.
+2. **Khắc phục dứt điểm lỗi icon ô vuông [▯] bằng SVG inline:**
+   - Thay thế toàn bộ webfont icon FontAwesome có nguy cơ lỗi glyph thành bộ icon SVG inline sắc nét 100% trong toàn bộ các cột:
+     * Cột 1 Hotline: Phone icon, Headset icon, Wrench icon.
+     * Cột 2 Chính sách: Truck icon, Shield-check icon, Percent icon, Lock icon, Receipt icon.
+     * Cột 3 Dịch vụ: Map-pin icon, Clock/History icon, Grid/Category icon, Sparkles/TechCare icon, Store/Branch icon.
+     * Cột 4 Phương thức thanh toán: Cash icon, QR-code icon, Wallet icon, Credit card icon, Installment icon.
+   - Nhờ SVG inline, giao diện hiển thị tức thì, không bị nhấp nháy, không bị ô vuông rỗng `[▯]`.
+3. **Chuẩn hóa Logo TechZone với Chip vi mạch SVG Vector:**
+   - Thay thế khung chữ nhật lệch font bằng chip vi mạch vector SVG gradient xanh `#0066cc` bo góc 8px sắc nét, hiển thị đồng bộ trên thanh điều hướng Header và Footer của cả 11 file HTML.
+4. **Nhúng Google Fonts Inter vào toàn bộ 11 trang HTML:**
+   - Đã chèn `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">` vào `<head>` của toàn bộ các file: `index.html`, `checkout.html`, `vouchers.html`, `history.html`, `profile.html`, `product-detail.html`, `products.html`, `tracking-detail.html`, `register.html`, `complete-profile.html`, `login.html`.
+5. **Cập nhật CSS Production-Ready trong `css/style.css`:**
+   - Quy định font chữ `Inter` toàn trang loại bỏ tình trạng lỗi gãy nét font tiếng Việt.
+   - Tinh chỉnh màu chủ đạo sang xanh dịu mắt `#0066cc` và hover `#0052a3`.
+   - Chuẩn hóa bán kính bo góc card xuống `8px` với border mờ `1px solid #e5e7eb` thanh lịch.
+   - Định kiểu link footer với icon SVG đồng màu `#64748b`, hover chuyển xanh mượt mà kèm hiệu ứng dịch chuyển nhẹ `translateX(3px)`.
+   - Footer copyright left padding 80px (mobile 64px) giữ khoảng cách an toàn với nút CSKH nổi.
+
+
+---
+
+## <a id="prompt-81"></a>Prompt 81: Rà soát & Chuẩn hóa De-AI / Humanize UI-UX - Dọn sạch text template, khắc phục hình ảnh/icon, nhân bản hóa tương tác Chatbot & Zero Mock Data
+
+- **Thời gian gửi:** `2026-10-23T21:54:01+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy thực hiện rà soát và chuẩn hóa toàn bộ dự án TechZone (HTML, CSS, JS) để loại bỏ hoàn toàn các dấu vết do AI sinh mã (De-AI / Humanize UI-UX), đưa website về tiêu chuẩn vận hành thương mại điện tử thực tế:
+
+1. DỌN SẠCH VĂN BẢN VÀ THUẬT NGỮ LỘ TEMPLATE AI (AI TEXT ARTIFACTS):
+- Xóa bỏ toàn bộ các từ khóa chú thích kỹ thuật hoặc ghi chú lộ đề bài trong các file HTML:
+  + Trang history.html: Bỏ cụm "(Shopee Style)" ở breadcrumb; chỉ để "Trang chủ / Quản lý đơn hàng".
+  + Trang vouchers.html: Bỏ các nhãn giả lập hoặc ghi chú dạng hướng dẫn bot.
+  + Footer: Xóa bỏ dòng chữ kỹ thuật "Multi-page Architecture | Hệ thống Quản trị Vận đơn & Định vị Bưu tá Thời gian thực"; thay bằng câu định vị bán lẻ tự nhiên: "Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc".
+  + Dòng bản quyền: Chuẩn hóa thành "© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy."
+- Chuẩn hóa các đoạn đánh giá / review mẫu (nếu có): Viết lại bằng giọng văn khách hàng thật (ngắn gọn, có nhận xét về pin, hiệu năng, tốc độ giao hàng), xóa bỏ các câu cảm thán sáo rỗng, rập khuôn kiểu văn mẫu AI.
+
+2. KHẮC PHỤC TRIỆT ĐỂ LỖI HÌNH ẢNH VÀ ICON HỎNG (VISUAL ARTIFACTS):
+- Footer: Loại bỏ hoàn toàn các ký tự Unicode lạ hiển thị thành ô vuông lỗi [▯] ở danh sách chính sách, dịch vụ và phương thức thanh toán. Thay thế bằng icon SVG inline đồng màu (#64748b) hoặc danh sách dấu chấm tròn đơn giản, thanh lịch.
+- Trang sản phẩm:
+  + Loại bỏ các ảnh nền đen chữ xanh hỏng (placeholder lỗi đường dẫn). Đảm bảo mọi sản phẩm phụ kiện (củ sạc Anker, pin Baseus, loa Marshall...) trỏ đúng file ảnh thật trong thư mục images/.
+  + Thay thế các ảnh mockup AI bị lỗi ngón tay, da sáp bóng nhẫy bằng ảnh render sản phẩm công nghệ thực tế, rõ nét.
+
+3. KHỬ TÍNH MÁY MÓC TRONG TƯƠNG TÁC NGƯỜI DÙNG (HUMAN-CENTRIC UX):
+- Chatbot CSKH:
+  + Thay câu mở đầu sách giáo khoa bằng câu chào hỗ trợ tự nhiên: "Chào bạn! Mình có thể hỗ trợ kiểm tra đơn hàng, tư vấn máy hay lấy mã giảm giá giúp bạn nhé."
+  + Thay avatar bánh răng kỹ thuật bằng avatar hỗ trợ viên thân thiện.
+- Logic dữ liệu thực tế (Zero Mock Data):
+  + Khi chưa đăng nhập: Tuyệt đối không chào tên khách, ẩn menu dropdown tài khoản.
+  + Khi không có voucher: Badge menu và các tab voucher phải tự động hiển thị số (0), không để số ảo hardcode.
+  + Điểm Smember: Chỉ tích lũy đúng 1% trên các đơn hàng có trạng thái "Đã giao".
+
+Hãy cung cấp chi tiết các đoạn mã HTML, CSS và JavaScript cần chỉnh sửa để triển khai trực tiếp vào dự án mà không làm ảnh hưởng đến cấu trúc hiện có!
+```
+
+### Các bước đã xử lý:
+1. **Dọn sạch triệt để văn bản & thuật ngữ lộ template AI (AI Text Artifacts):**
+   - Loại bỏ toàn bộ các ghi chú kỹ thuật, đề bài `(Shopee Style)`, `(Shopee Navigation Tabs)`, v.v. trong `history.html`, `checkout.html`, `products.html`, `product-detail.html`, `tracking-detail.html`.
+   - Chuẩn hóa breadcrumb [history.html](file:///f:/banhanggiaohang/history.html): `Trang chủ / Quản lý đơn hàng`.
+   - Cập nhật dòng chân trang đáy trên toàn bộ 11 file HTML:
+     * Bản quyền: `© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy.`
+     * Định vị bán lẻ: `Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc`.
+   - Chuẩn hóa đánh giá / review mẫu khách hàng trong [js/main.js](file:///f:/banhanggiaohang/js/main.js): Chỉnh sửa review thực tế tập trung vào thời lượng pin, hiệu năng chip, độ mượt màn hình, tốc độ giao hàng 2H; loại bỏ cam kết ảo `+50 điểm Smember` tại khung gửi review.
+2. **Khắc phục triệt để lỗi hình ảnh và visual artifacts:**
+   - 100% icon footer được nhúng trực tiếp bằng vector SVG inline sạch sẽ, hoàn toàn không phụ thuộc CDN webfont để không bao giờ bị ô vuông rỗng `[▯]`.
+   - Thêm cơ chế fallback tự động `onerror="this.onerror=null; this.src='images/sp1.jpg';"` cho card sản phẩm, triệt tiêu mọi rủi ro hiển thị placeholder nền đen chữ xanh khi lỗi mạng.
+   - Toàn bộ 20 sản phẩm công nghệ & phụ kiện (củ sạc Anker `sp12.jpg`, loa Marshall `sp15.jpg`, pin Baseus `sp16.jpg`...) trỏ đúng file ảnh thật trong thư mục `images/`.
+3. **Nhân bản hóa tương tác Chatbot & Zero Mock Data (Human-Centric UX):**
+   - **Chatbot CSKH:** Thay thế biểu tượng bánh răng `⚙️` bằng ảnh chân dung chuyên viên CSKH thân thiện; câu chào mở đầu được cập nhật thành câu thoại tự nhiên: `"Chào bạn! Mình có thể hỗ trợ kiểm tra đơn hàng, tư vấn máy hay lấy mã giảm giá giúp bạn nhé."`.
+   - **Tài khoản chưa đăng nhập:** Nút hiển thị `Đăng nhập`, menu dropdown tài khoản được khóa ẩn tuyệt đối (`display: none !important`), không bung chào hỏi.
+   - **Voucher không dùng số ảo:** Khi chưa có voucher, toàn bộ 5 tab lọc voucher hiển thị số `(0)`, menu badge ẩn; nút Kho Voucher hiển thị `Kho Voucher (0)` chuẩn icon SVG, triệt tiêu lỗi `???` cũ.
+   - **Điểm Smember:** Được tính chuẩn xác tuyệt đối `Math.round(totalSpent * 0.01)` chỉ trên các đơn hàng có trạng thái "Đã giao" hoặc "Giao hàng thành công".
+
+
+---
+
+## <a id="prompt-82"></a>Prompt 82: Cập nhật Header TechZone - Khắc phục triệt để lỗi icon ô vuông [▯] qua Font Awesome 6.5.1 & Đổi tone màu Header E-commerce chuẩn
+
+- **Thời gian gửi:** `2026-10-23T22:14:51+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy cập nhật mã nguồn (HTML & style.css) cho Header của dự án TechZone để giải quyết 2 yêu cầu:
+
+1. KHẮC PHỤC TRIỆT ĐỂ LỖI TOÀN BỘ ICON BỊ BIẾN THÀNH Ô VUÔNG/HÌNH CHỮ NHẬT LỖI [▯] (Hình ảnh đính kèm):
+- Nguyên nhân: Các thẻ <i> hoặc ký tự icon đang dùng font chữ không được nhúng (Font Awesome bị mất CDN hoặc mã Unicode lạ).
+- Cách xử lý chuẩn:
+  + Thêm link Font Awesome 6 CDN vào thẻ <head> của toàn bộ các trang HTML:
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  + Thay thế toàn bộ ký tự Unicode lỗi bằng class Font Awesome chuẩn hoặc SVG inline:
+    * Nút Danh mục: <i class="fa-solid fa-bars"></i> Danh mục <i class="fa-solid fa-chevron-down"></i>
+    * Kính lúp tìm kiếm: <i class="fa-solid fa-magnifying-glass"></i>
+    * Nút Tài khoản: <i class="fa-regular fa-circle-user"></i>
+    * Nút Giỏ hàng: <i class="fa-solid fa-cart-shopping"></i>
+    * Dropdown menu:
+      - Xin chào: <i class="fa-solid fa-user-check"></i>
+      - Đơn mua: <i class="fa-solid fa-clock-rotate-left"></i>
+      - Kho voucher: <i class="fa-solid fa-ticket"></i>
+      - Thông tin: <i class="fa-regular fa-id-card"></i>
+      - Đăng xuất: <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+2. THAY ĐỔI TONE MÀU HEADER ĐỂ KHỬ HOÀN TOÀN "MÙI AI":
+- Đổi từ nền tối đen/xanh sẫm mặc định của AI sang phong cách E-commerce thực tế (chọn 1 trong 2 phong cách chuẩn Việt Nam):
+  + PHONG CÁCH 1 (Chuẩn CellphoneS - Năng động, tin cậy): Nền Header màu đỏ đô đặc trưng: background: #d70018 !important; text/icon màu trắng nổi bật. Nút tìm kiếm có nút bấm xanh hoặc bo tròn viên thuốc trắng xám.
+  + PHONG CÁCH 2 (Chuẩn Brand Công Nghệ Hiện Đại): Nền Header màu xanh dương công nghệ: background: #0066cc !important;.
+- Topbar phía trên: background: #b80014 (nếu dùng đỏ) hoặc #004da6 (nếu dùng xanh), tạo chiều sâu nhận diện rõ ràng.
+- Đảm bảo màu chữ, nút "Trang chủ", nút "Danh mục" và các ô input hiển thị tương phản sắc nét, đẹp mắt và không còn nét thô cứng của template AI.
+
+Cung cấp đoạn link CDN bổ sung, cấu trúc HTML Header cập nhật và đoạn CSS đổi màu hoàn chỉnh!
+```
+
+### Các bước đã xử lý:
+1. **Khắc phục triệt để lỗi icon ô vuông [▯] trên Header:**
+   - Đảm bảo toàn bộ 11 file HTML đều nhúng Font Awesome 6.5.1 CDN chuẩn xác vào `<head>`:
+     `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">`
+   - Thay thế toàn bộ ký tự Unicode lạ và emoji gây lỗi thành class Font Awesome 6 chuẩn:
+     * Nút Danh mục: `<i class="fa-solid fa-bars"></i> <span>Danh mục</span> <i class="fa-solid fa-chevron-down tz-category-arrow"></i>`
+     * Kính lúp tìm kiếm: `<i class="fa-solid fa-magnifying-glass search-icon"></i>`
+     * Nút Tài khoản: `<i class="fa-regular fa-circle-user"></i>`
+     * Nút Giỏ hàng: `<i class="fa-solid fa-cart-shopping"></i>`
+     * Dropdown menu tài khoản:
+       - Xin chào: `<i class="fa-solid fa-user-check"></i>`
+       - Đơn mua: `<i class="fa-solid fa-clock-rotate-left"></i>`
+       - Kho voucher: `<i class="fa-solid fa-ticket"></i>` (loại bỏ emoji `🎟️` biến thành ô vuông)
+       - Thông tin: `<i class="fa-regular fa-id-card"></i>`
+       - Đăng xuất: `<i class="fa-solid fa-arrow-right-from-bracket"></i>`
+2. **Đổi mới tone màu Header chuẩn E-commerce công nghệ thực tế (Khử sạch "mùi AI"):**
+   - Áp dụng **Phong Cách 2 (Chuẩn Brand Công Nghệ Hiện Đại TechZone Blue)** làm giao diện chính:
+     * **Topbar:** `background: #004da6 !important;` (xanh dương đậm tạo chiều sâu), chữ `#e2e8f0`, hotline `#ffd166`. Badge vị trí viền trong suốt sang trọng `rgba(255,255,255,0.15)`.
+     * **Main Header:** `background: #0066cc !important;` (xanh dương công nghệ nổi bật), đổ bóng nhẹ chuyên nghiệp `box-shadow: 0 4px 16px rgba(0, 77, 166, 0.22)`.
+     * **Nút Trang chủ & Danh mục:** Viền mờ `rgba(255,255,255,0.25)`, nền bán trong suốt `rgba(255,255,255,0.15)`, chữ và icon trắng sắc nét.
+     * **Thanh tìm kiếm:** Nền trắng tinh khôi, chữ xám đậm `#0f172a`, nút "Tìm kiếm" màu xanh đậm `#004da6` tạo tương phản cao cấp.
+     * **Nút Giỏ hàng & Tài khoản:** Nền bo góc 8px trắng mờ, huy hiệu số lượng giỏ hàng màu vàng rực rỡ `#ffd166` viền `#0066cc`.
+   - Bổ sung sẵn lớp CSS tùy biến **Phong Cách 1 (Chuẩn CellphoneS Red: `#d70018` / `#b80014`)** qua class `.theme-cellphones-red` để chuyển đổi tức thì khi cần.
+
+
+---
+
+## <a id="prompt-83"></a>Prompt 83: Thay đổi toàn bộ bảng màu Header, Topbar sang Đỏ CellphoneS/TopZone & Đại tu Khối Flash Sale rực lửa chuẩn E-commerce
+
+- **Thời gian gửi:** `2026-10-23T22:22:52+07:00`
+
+### Nội dung yêu cầu:
+
+```markdown
+Hãy thay đổi toàn bộ bảng màu (Color Palette) của Header, Topbar và khối Flash Sale trong style.css để loại bỏ hoàn toàn phong cách tối neon (Cyberpunk / Dark Neon AI template), chuyển sang phong cách sàn bán lẻ công nghệ thực tế (Chuẩn CellphoneS / TopZone):
+
+1. THAY ĐỔI MÀU HEADER & TOPBAR (CHUYỂN SANG ĐỎ THƯƠNG HIỆU RETAIL):
+- Topbar (.header-topbar):
+  + Đổi sang màu đỏ sẫm: background: #b80014 !important;
+  + Màu chữ/icon: #fee2e2 hoặc #ffffff;
+- Header chính (.header-main / header):
+  + Đổi nền sang màu đỏ thương hiệu: background: #d70018 !important;
+  + XÓA BỎ TOÀN BỘ hiệu ứng phát sáng neon (box-shadow, glow, drop-shadow màu xanh) trên nút, logo và ô tìm kiếm.
+- Logo TechZone:
+  + Nền icon chip: màu trắng hoặc đỏ đậm hơn; chữ "TechZone" màu trắng nổi bật, font dứt khoát.
+- Các nút "Trang chủ", "Danh mục", "Tài khoản", "Giỏ hàng":
+  + Bỏ nền xanh phát sáng; chuyển sang dạng nút phẳng tối giản: background: rgba(255, 255, 255, 0.16) !important; border: 1px solid rgba(255, 255, 255, 0.25) !important; color: #ffffff !important; border-radius: 8px;
+  + Hover: background: rgba(255, 255, 255, 0.25) !important;.
+- Thanh tìm kiếm:
+  + Nền trắng tinh (#ffffff), viền mảnh không phát sáng. Nút "Tìm kiếm" màu xanh công nghệ (#0066cc) hoặc đỏ cam (#e11d48) phẳng.
+
+2. ĐỔI MÀU KHỐI FLASH SALE (KHỬ NỀN ĐEN XANH TỐI MÃU AI):
+- Khối bọc ngoài Flash Sale (.flash-sale-wrapper / .flash-sale-container):
+  + Xóa bỏ màu nền đen xanh (#0b1328) hiện tại.
+  + Đổi sang dải màu gradient Flash Sale rực lửa chuẩn e-commerce:
+    background: linear-gradient(135deg, #d70018 0%, #ff5722 100%) !important;
+    border-radius: 14px; padding: 16px;
+  + Tiêu đề: "⚡ FLASH SALE GIỜ VÀNG" màu vàng nắng (#fef08a) hoặc trắng nổi bật trên nền đỏ cam.
+  + Ô đồng hồ đếm ngược: nền đen mờ (#1e293b), số màu trắng hoặc vàng sắc nét.
+  + Thẻ sản phẩm bên trong giữ nền trắng (#ffffff), đổ bóng nhẹ tự nhiên (box-shadow: 0 2px 8px rgba(0,0,0,0.08)), nhãn giảm giá đỏ cam rực rỡ.
+
+Cung cấp đoạn mã CSS cập nhật để dán vào style.css!
+```
+
+### Các bước đã xử lý:
+1. **Chuyển đổi toàn bộ Header & Topbar sang Đỏ Thương Hiệu Retail (CellphoneS / TopZone):**
+   - **Topbar (`.tz-topbar, .header-topbar`):** Chuyển sang nền đỏ sẫm `#b80014`, chữ và icon `#fee2e2` hoặc `#ffffff`. Hotline vàng kim `#ffea79`. Location badge bo góc phẳng `background: rgba(255, 255, 255, 0.16)`.
+   - **Main Header (`.tz-header, .tz-main-header, .header-main, header`):** Chuyển sang màu đỏ thương hiệu bán lẻ `#d70018`. Xóa bỏ 100% hiệu ứng đổ bóng phát sáng neon (glow, cyan drop-shadow).
+   - **Logo TechZone:** Icon chip nền trắng sắc nét (`background: #ffffff`, vector stroke `#d70018`), chữ TechZone màu trắng dứt khoát.
+   - **Nút điều hướng (Trang chủ, Danh mục, Tài khoản, Giỏ hàng):** Dạng nút phẳng tối giản `background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; border-radius: 8px`. Badge giỏ hàng nền vàng kim `#ffea79`, số đỏ sẫm `#b80014`.
+   - **Thanh tìm kiếm:** Nền trắng tinh khôi `#ffffff`, viền xám mảnh `1px solid #e2e8f0`, chữ xám đen `#0f172a`. Nút Tìm kiếm phẳng màu xanh công nghệ `#0066cc`.
+2. **Đại tu Khối Flash Sale Giờ Vàng (Khử triệt để nền đen xanh tối AI):**
+   - **Khung bọc Flash Sale (`.tz-flashsale-block`):** Xóa bỏ nền đen xanh `#0b1328`, chuyển sang dải màu gradient Flash Sale rực lửa chuẩn e-commerce:
+     `background: linear-gradient(135deg, #d70018 0%, #ff5722 100%) !important; border-radius: 14px; padding: 16px 18px 18px; box-shadow: 0 8px 24px rgba(215, 0, 24, 0.22);`
+   - **Tiêu đề Flash Sale:** Màu vàng nắng rực rỡ `#fef08a`, tia chớp vàng nắng, xóa bỏ hiệu ứng quét tia sáng neon AI.
+   - **Đồng hồ đếm ngược:** Ô số nền đen mờ `#1e293b`, chữ số trắng sắc nét monospace, dấu hai chấm trắng to rõ.
+   - **Thẻ sản phẩm bên trong:** Nền trắng tinh `#ffffff`, đổ bóng nhẹ `0 2px 8px rgba(0,0,0,0.08)`, nhãn giảm giá đỏ rực `#d70018`, thanh tiến độ bán chạy gradient cam-đỏ mượt mà.
+
+
+---
+
+## <a id="prompt-84"></a>Prompt 84: Cập nhật bảng màu Header Đen Tuyền (#0f1115), Nút bấm Đỏ Đô (#b91c1c) & Thân trang Nền Trắng Tinh (#ffffff)
+
+### Yêu cầu người dùng:
+```text
+Hãy cập nhật lại bảng màu cho Header và giao diện toàn trang trong style.css theo đúng yêu cầu: Nền Header màu đen tuyền (#0f1115 / #000000), Các nút chức năng nổi bật bằng màu đỏ đô (#b91c1c / #991b1b), và Thân trang (Body/Main content) giữ nền trắng tinh (#ffffff / #f8fafc):
+
+1. HEADER & TOPBAR (NỀN ĐEN SANG TRỌNG):
+- Topbar (.header-topbar, .top-bar):
+  + Nền: background: #000000 !important;
+  + Viền dưới: border-bottom: 1px solid #27272a !important;
+  + Chữ/Icon: màu xám trắng (#a1a1aa), hover đổi sang trắng.
+- Header chính (.header-main, header):
+  + Nền: background: #0f1115 !important (hoặc #121212);
+  + Không dùng bóng sáng màu neon, chỉ dùng bóng đổ nhẹ tự nhiên: box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+- Logo TechZone:
+  + Chữ "TechZone" màu trắng tinh (#ffffff).
+  + Khung icon chip: Nền đỏ đô (#b91c1c), icon màu trắng.
+
+2. CÁC NÚT ĐIỀU HƯỚNG & HÀNH ĐỘNG (ĐỎ ĐÔ ĐẲNG CẤP):
+- Các nút "Trang chủ", "Danh mục", "Tài khoản", "Giỏ hàng", nút "Tìm kiếm":
+  + Nền: background: #b91c1c !important; (Màu đỏ đô / Crimson Red sang trọng, không chói lóa).
+  + Viền: border: 1px solid #dc2626 !important;
+  + Chữ & Icon: màu trắng (#ffffff) in đậm rõ ràng, không bị lỗi icon.
+  + Hover: background: #991b1b !important;
+- Ô nhập tìm kiếm (Input): Nền trắng tinh (#ffffff), bo góc gọn gàng, viền xám sáng, nút "Tìm kiếm" màu đỏ đô nằm lọt lòng bên phải.
+
+3. THÂN TRANG & KHỐI DANH MỤC (NỀN TRẮNG):
+- Toàn bộ body và container chính: background: #ffffff !important; color: #1e293b !important;
+- Menu danh mục bên trái và khối banner: Nền trắng sạch sẽ (#ffffff), đổ bóng viền mờ 1px (#e2e8f0), chữ màu đen xám dễ đọc.
+
+Cung cấp đoạn mã CSS cập nhật để dán đè vào style.css!
+```
+
+### Các bước đã xử lý:
+1. **Thiết lập Header & Topbar nền Đen Tuyền Sang Trọng:**
+   - **Topbar (`.tz-topbar, .header-topbar, .top-bar`):** Nền đen tuyệt đối `#000000`, đường viền dưới tinh tế `1px solid #27272a`, chữ và icon màu xám sáng `#a1a1aa`, khi hover đổi sang trắng `#ffffff`. Hotline vàng kim `#ffea79`, location badge đen mờ `rgba(255, 255, 255, 0.08)` với viền `#3f3f46`.
+   - **Header chính (`.tz-header, .tz-main-header, .header-main, header`):** Nền đen sang trọng `#0f1115`, bóng đổ mờ tự nhiên `box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)`, loại bỏ hoàn toàn hiệu ứng phát sáng neon AI.
+   - **Logo TechZone:** Chữ "TechZone" màu trắng tinh `#ffffff`, khung icon chip vi mạch nền đỏ đô `#b91c1c` viền `#dc2626` với icon SVG màu trắng tinh khôi.
+2. **Đồng bộ Các Nút Điều Hướng & Hành Động Đỏ Đô Đẳng Cấp (#b91c1c / #991b1b):**
+   - **5 Nút chức năng chủ đạo (Trang chủ, Danh mục, Tài khoản, Giỏ hàng, nút Tìm kiếm):**
+     - Nền: `background: #b91c1c !important;` (Crimson Red sang trọng, không chói lóa).
+     - Viền: `border: 1px solid #dc2626 !important;`
+     - Chữ & Icon: Màu trắng `#ffffff` in đậm rõ nét, không lỗi font hay icon.
+     - Bo góc chuẩn: `border-radius: 8px !important;`
+     - Hiệu ứng hover: Chuyển sang đỏ đậm quyền lực `background: #991b1b !important; border-color: #ef4444 !important;`.
+   - **Thanh tìm kiếm:** Khung input màu trắng tinh `#ffffff`, bo tròn 8px, viền xám mảnh `1px solid #e2e8f0`. Nút "Tìm kiếm" màu đỏ đô `#b91c1c` nằm lọt lòng gọn gàng bên phải.
+   - **Huy hiệu giỏ hàng:** Nền vàng kim `#ffea79`, số đỏ đậm `#7f1d1d`, viền nổi `#b91c1c`.
+3. **Thân Trang & Khối Danh Mục Nền Trắng Tinh Khôi (#ffffff):**
+   - **Toàn bộ Body và Container nội dung chính (`body, main, .main-content, #main-content, .container`):** Nền trắng sáng tinh `#ffffff`, chữ đen xám dễ đọc `#1e293b`.
+   - **Menu danh mục bên trái (`.tz-sidebar-menu`):** Nền trắng `#ffffff`, viền xám mờ `1px solid #e2e8f0`, đổ bóng tự nhiên `box-shadow: 0 4px 14px rgba(0,0,0,0.04)`. Khi rê chuột (hover) đổi sang nền xám nhạt `#f8fafc`, chữ và icon chuyển sang màu đỏ đô `#b91c1c`.
+   - **Flyout Submenu đa cột:** Nền trắng `#ffffff`, tiêu đề nhóm danh mục có icon màu đỏ đô `#b91c1c`.
+   - **Khối banner bên phải:** Nổi bật trên nền trắng, bo góc 12px và đổ bóng nhẹ.
+
+
+---
+
+## <a id="prompt-85"></a>Prompt 85: Đồng bộ hóa toàn bộ bảng màu Website theo 3 tone ĐEN - ĐỎ ĐÔ ĐẬM (#8b0000) - TRẮNG & Khắc phục triệt để lỗi Font Icon [▯]
+
+### Yêu cầu người dùng:
+```text
+Hãy đồng bộ hóa toàn bộ bảng màu (Color Palette) cho toàn bộ website TechZone trong file style.css theo đúng 3 tone màu duy nhất: ĐEN - ĐỎ ĐÔ ĐẬM - TRẮNG:
+
+1. BẢNG MÀU CHỦ ĐẠO (:root):
+  --tz-black: #0f1115;        /* Nền Header, Topbar, Footer */
+  --tz-black-deep: #000000;
+  --tz-red-dark: #8b0000;     /* Đỏ đô đậm chủ đạo cho nút & điểm nhấn */
+  --tz-red-hover: #700000;    /* Đỏ đô trầm khi hover */
+  --tz-white: #ffffff;        /* Nền trang, thẻ sản phẩm */
+  --tz-gray-light: #f8fafc;   /* Nền phụ */
+  --tz-text-main: #0f172a;    /* Chữ chính */
+
+2. LOẠI BỎ TOÀN BỘ MÀU XANH DƯƠNG CŨ TRÊN TOÀN WEBSITE:
+- Nút "Tìm kiếm" trong Header: Đổi từ xanh sang Đỏ đô đậm (--tz-red-dark), chữ trắng.
+- Tất cả các nút "Thêm vào giỏ hàng", "Mua ngay", "Áp dụng":
+  + Nền: background: #8b0000 !important; color: #ffffff !important; border: none; border-radius: 8px;
+  + Hover: background: #700000 !important;
+- Giá bán sản phẩm (current-price / product-price):
+  + Màu chữ: color: #8b0000 !important; font-weight: 800;
+- Các Tab danh mục, bộ lọc ("Tất cả", "Phụ kiện Apple", "Củ sạc"):
+  + Tab active: background: #8b0000 !important; color: #ffffff !important;
+  + Tab thường: border: 1px solid #e2e8f0; color: #475569;
+- Nút CSKH Widget tròn nổi góc trái:
+  + Nền xanh cũ -> đổi sang Đỏ đô đậm (#8b0000) với viền nhẹ và icon trắng.
+
+3. KHẮC PHỤC LỖI FONT ICON:
+- Đảm bảo thẻ <i> và class fa-*, fas, far nhận đúng font 'Font Awesome 6 Free' để triệt tiêu mọi ô vuông chữ nhật lỗi [▯].
+
+Cung cấp đoạn mã CSS ghi đè hoàn chỉnh để dán vào file style.css!
+```
+
+### Các bước đã xử lý:
+1. **Thiết lập chuẩn 3 tone màu master trong `:root` và khử biến toàn cục:**
+   - Khai báo 7 biến chủ đạo: `--tz-black: #0f1115;`, `--tz-black-deep: #000000;`, `--tz-red-dark: #8b0000;`, `--tz-red-hover: #700000;`, `--tz-white: #ffffff;`, `--tz-gray-light: #f8fafc;`, `--tz-text-main: #0f172a;`.
+   - Gán đè toàn bộ biến kế thừa (`--tz-blue`, `--tz-primary`, `--tz-cyan`, `--tz-gradient`, `--tz-gradient-flash`) sang `#8b0000` / `#700000` để khử triệt để mọi tàn dư màu xanh dương cũ trên khắp website.
+2. **Khắc phục dứt điểm lỗi Font Icon ô vuông `[▯]`:**
+   - Xử lý nguyên nhân gốc rễ do các quy tắc `* { font-family: 'Inter' !important; }` đè lên thẻ icon.
+   - Bổ sung khối reset chuyên dụng cho toàn bộ các class `fa-*`, `fas`, `far`, `fa-solid`, `fa-regular` nhận chính xác font `'Font Awesome 6 Free'` với `font-weight: 900` (solid) và `400` (regular), `Font Awesome 6 Brands` (brands).
+3. **Loại bỏ 100% màu xanh dương cũ trên các nút hành động & điểm nhấn:**
+   - **Nút "Tìm kiếm" Header:** Chuyển sang nền đỏ đô đậm `background: #8b0000 !important;`, viền `#700000`, chữ trắng, hover `#700000`.
+   - **Các nút "Thêm vào giỏ hàng" (`.btn-card-add`, `.btn-pd-add-cart`):** Chuyển sang nền `#8b0000 !important;`, bo góc 8px, hover `#700000 !important;`.
+   - **Các nút "Mua ngay" (`.btn-pd-buy-now`, `.btn-buy-now`):** Chuyển sang nền `#8b0000 !important;`, bo góc 8px, hover `#700000 !important;`.
+   - **Các nút "Áp dụng", "Lưu mã", "Xác nhận", "Thanh toán" (`.btn-apply`, `.btn-save-voucher`, `.btn-shopee-primary`, `.btn-tz-primary`, `.btn-addr-action-confirm`):** Chuyển sang nền `#8b0000 !important;`, bo góc 8px, hover `#700000 !important;`.
+   - **Giá bán sản phẩm (`.price-current`, `.tz-price-current`, `.current-price`, `.product-price`, `.flash-price`, `.tz-pd-price-current`, `.tz-pd-price-main`):** Màu chữ `color: #8b0000 !important; font-weight: 800 !important;`.
+   - **Các Tab danh mục & Bộ lọc ("Tất cả", "Phụ kiện Apple", "Củ sạc"...):**
+     - Tab Active: `background: #8b0000 !important; color: #ffffff !important; border: 1px solid #8b0000 !important;`.
+     - Tab Inactive: `background: #ffffff !important; border: 1px solid #e2e8f0 !important; color: #475569 !important;`, hover đổi sang `#f8fafc` cùng viền và chữ `#8b0000`.
+   - **Nút CSKH Widget tròn nổi góc trái:** Đổi nền gradient xanh cũ sang Đỏ đô đậm `#8b0000 !important;` với viền `#a00000`, vòng sóng đỏ lan tỏa `rgba(139, 0, 0, 0.45)`, header chat đỏ đô và nút gửi tin nhắn `#8b0000`.
+   - **Header & Footer:** Header (`#0f1115` & `#000000`) và Footer (`#0f1115` & `#000000`) đồng bộ hoàn hảo với khối thân trang trắng tinh `#ffffff`.
+
+
+---
+
+## <a id="prompt-86"></a>Prompt 86: Tinh chỉnh giao diện Hồ Sơ Cá Nhân (profile.html) & Header Home chuẩn Enterprise Retail - Chuẩn hóa Avatar, 3 Thẻ thống kê Minimalist, Sidebar & Form
+
+### Yêu cầu người dùng:
+```text
+Hãy tinh chỉnh lại giao diện trang Hồ Sơ Cá Nhân (profile.html) và file style.css để loại bỏ hoàn toàn các chi tiết "mùi AI / template bài tập", đưa về chuẩn thiết kế chuyên nghiệp của các hệ thống bán lẻ công nghệ lớn:
+
+1. CHUẨN HÓA AVATAR & THÔNG TIN CÁ NHÂN:
+- Xóa bỏ vòng tròn chữ cái "TM" nền gradient 2 màu lòe loẹt.
+- Thay bằng avatar người dùng thanh lịch: hình minh họa chân dung tối giản nền xám nhạt (#f1f5f9) hoặc vòng tròn viền mảnh 1px có icon người thanh thoát.
+- Nút camera nhỏ đổi thành nút tròn trắng viền xám tinh tế ở góc dưới avatar.
+- Nhãn cấp bậc: Đổi "🌱 SMEMBER MỚI" thành badge chuẩn nhận diện: nền đỏ đô nhạt (#fef2f2), chữ đỏ đô (#991b1b), viền mảnh: "Hội viên Smember".
+
+2. ĐỒNG BỘ 3 THẺ THỐNG KÊ (ĐIỂM, CHI TIÊU, ĐƠN HÀNG) THEO TONE TRẮNG - ĐEN - ĐỎ ĐÔ:
+- BỎ TOÀN BỘ 3 màu icon xanh lá, vàng chanh, xanh lơ lòe loẹt kiểu demo.
+- Cả 3 thẻ thống kê dùng chung 1 phong cách Minimalist:
+  + Nền trắng (#ffffff), viền mảnh 1px (#e2e8f0), bo góc 10px, đổ bóng mờ rất nhẹ.
+  + Icon đồng bộ dạng đơn sắc (Monochrome) màu xám than (#475569) hoặc đỏ đô trầm (#991b1b) nằm trong ô vuông bo góc nền xám nhạt (#f8fafc).
+  + Con số (0 điểm, 0 đ, 0 đơn): font to đậm màu đen (#0f172a), chữ chú thích nhỏ màu xám (#64748b).
+
+3. ĐỒNG BỘ SIDEBAR BÊN TRÁI:
+- Đổi màu mục đang chọn ("Hồ sơ của tôi"): Bỏ nền xanh lơ cũ. Chuyển sang nền đỏ đô rất nhạt (background: #fef2f2; color: #991b1b; font-weight: 600; border-left: 3px solid #991b1b;).
+- Các mục còn lại (Đơn mua, Sổ địa chỉ, Đổi mật khẩu): icon và chữ màu xám (#475569), hover đổi sang đỏ đô nhẹ.
+
+4. TINH CHỈNH FORM NHẬP LIỆU:
+- Các ô input (Email, Họ tên, Số điện thoại, Ngày sinh):
+  + Nền trắng, viền mảnh 1px (#cbd5e1), bo góc 8px.
+  + Khi focus vào ô: viền đổi sang đỏ đô trầm (#991b1b) kèm bóng mờ nhẹ thay vì màu xanh dương mặc định.
+- Nút radio Giới tính (Nam, Nữ, Khác): accent-color: #991b1b.
+
+5. NÚT "TRANG CHỦ" TRÊN HEADER:
+- Bỏ nền đỏ đô, chuyển sang dạng link chữ trắng tối giản có icon ngôi nhà nhỏ để Header thanh thoát, chuyên nghiệp.
+
+Cung cấp đoạn mã CSS cập nhật để dán vào style.css!
+```
+
+### Các bước đã xử lý:
+1. **Chuẩn hóa Avatar & Thông tin cá nhân:**
+   - Xóa bỏ hoàn toàn avatar tạo chữ viết tắt Dicebear ("TM") nền gradient demo. Thay bằng chân dung tối giản thanh lịch viền mảnh `1px solid #e2e8f0` trên nền xám nhạt `#f1f5f9`.
+   - Nút đổi ảnh đại diện (camera) đổi thành nút tròn nền trắng `#ffffff`, viền xám mảnh `#cbd5e1`, icon xám `#475569` nằm gọn ghẽ góc dưới avatar.
+   - Nhãn cấp bậc: Đổi từ nhãn demo "🌱 SMEMBER MỚI" thành badge nhận diện doanh nghiệp chuẩn: nền đỏ đô nhạt `background: #fef2f2`, chữ đỏ đô `#991b1b`, viền mảnh `#fecaca`: "Hội viên Smember".
+2. **Đồng bộ 3 Thẻ thống kê (Điểm tích lũy, Chi tiêu, Đơn hàng) chuẩn Minimalist:**
+   - Xóa bỏ 100% 3 màu icon demo lòe loẹt (xanh lá, vàng chanh, xanh lơ).
+   - Đồng bộ sang phong cách Minimalist: Nền trắng `#ffffff`, viền mảnh `1px solid #e2e8f0`, bo góc 10px, đổ bóng mờ siêu nhẹ `box-shadow: 0 2px 6px rgba(0,0,0,0.04)`.
+   - Icon đơn sắc (Monochrome) màu đỏ đô trầm `#991b1b` nằm trong ô vuông bo tròn 8px nền xám nhạt `#f8fafc`.
+   - Con số hiển thị: Font chữ to đậm rõ nét màu đen than `#0f172a`, nhãn chú thích xám dịu mắt `#64748b`.
+3. **Đồng bộ Sidebar trang cá nhân:**
+   - Mục đang chọn ("Hồ sơ của tôi"): Chuyển sang nền đỏ đô rất nhạt `background: #fef2f2`, chữ & icon đỏ đô `#991b1b`, đường viền định vị bên trái `border-left: 3px solid #991b1b`.
+   - Các mục điều hướng còn lại ("Đơn mua", "Sổ địa chỉ", "Đổi mật khẩu"): Màu chữ/icon xám thanh nhã `#475569`, khi hover chuyển sang nền `#f8fafc` cùng chữ và icon đỏ đô `#991b1b`.
+4. **Tinh chỉnh Form nhập liệu Profile & Đổi mật khẩu:**
+   - Các ô input (Email, Họ tên, Điện thoại, Ngày sinh, Mật khẩu): Nền trắng `#ffffff`, viền mảnh `#cbd5e1`, bo góc 8px.
+   - Hiệu ứng Focus: Viền chuyển sang đỏ đô trầm `#991b1b` kèm vòng hào quang mờ `box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.12)`, triệt tiêu hoàn toàn viền xanh dương mặc định của trình duyệt.
+   - Nút radio Giới tính (Nam, Nữ, Khác): Thiết lập `accent-color: #991b1b !important;`.
+   - Nút "Lưu Thay Đổi": Nền đỏ đô đậm `#8b0000`, bo góc 8px, hover `#700000`.
+5. **Nút "Trang chủ" trên Header:**
+   - Loại bỏ nền đỏ đô, chuyển sang dạng link chữ trắng tối giản (`background: transparent; border: none; color: #ffffff;`) kèm icon ngôi nhà thanh thoát, hover nhẹ nền mờ `rgba(255, 255, 255, 0.12)`, giúp tổng thể Header cân đối và chuyên nghiệp.
+
+
+---
+
+## <a id="prompt-87"></a>Prompt 87: Tinh giản toàn bộ icon/emoji trong Quản lý đơn hàng (history.html) & style.css - Chuẩn hóa Tabs, Header đơn, Strip vận chuyển, Nút bấm & Bỏ icon khiên lỗi
+
+### Yêu cầu người dùng:
+```text
+Hãy tinh giản toàn bộ icon/emoji trong trang Quản lý đơn hàng (history.html) và file style.css để giao diện sạch sẽ, chuyên nghiệp chuẩn sàn thương mại điện tử:
+
+1. XÓA BỎ TOÀN BỘ EMOJI THỪA TRÊN GIAO DIỆN:
+- Tiêu đề chính: Xóa biểu tượng túi đỏ 👜, chỉ giữ lại chữ in đậm rõ ràng: "QUẢN LÝ ĐƠN HÀNG".
+- Nút "Kho Voucher": Xóa icon vé vàng, chuyển thành nút viền mảnh gọn gàng: "Kho Voucher (0)".
+- Thanh Tabs trạng thái (Tất cả, Chờ xác nhận, Đang giao, Đã giao, Đã hủy, Tra cứu bảo hành):
+  + XÓA icon khiên 🛡️ ở mục "Tra cứu bảo hành". Toàn bộ 6 tab chỉ để chữ thuần túy, font chữ đồng bộ.
+  + Tab đang chọn ("Tất cả"): Nền đỏ đô (#991b1b), chữ trắng. Các tab khác chữ màu xám #475569.
+
+2. TINH GỌN KHỐI CHI TIẾT ĐƠN HÀNG (ORDER CARD):
+- Header đơn hàng:
+  + Bỏ icon ngôi nhà/cửa hàng 🏪, chỉ để: "TechZone Official Store | Mã đơn: SPX-299991".
+  + Trạng thái bên phải: Bỏ icon hộp 📦, chỉ để chữ cam/đỏ đô: "Chờ xác nhận".
+- Khung thông tin vận chuyển màu xanh lá:
+  + Xóa toàn bộ emoji 🚚, 📦, 🕒.
+  + Trình bày lại thanh lịch:
+    - Dòng 1: "Đơn vị vận chuyển: SPX Express - Đang chuẩn bị hàng"
+    - Dòng 2: "Cập nhật lúc 23:10 | Đơn hàng đã được khởi tạo thành công"
+- XÓA BỎ HOÀN TOÀN icon khiên xanh 🛡️ đang bị lỗi nằm đơn độc ở góc dưới bên trái dòng tổng tiền.
+- Cụm nút bấm ở đáy đơn hàng (Hủy đơn, Xem nhanh, Lộ trình):
+  + Xóa bỏ các icon 🚫, 👁️, 🗺️. Chỉ để chữ thuần:
+    [ Hủy đơn ]  [ Xem chi tiết ]  [ Theo dõi lộ trình ]
+  + Nút "Theo dõi lộ trình": Nền đỏ đô đậm (#991b1b), chữ trắng.
+  + Nút "Hủy đơn": Viền xám mờ, chữ xám đỏ nhẹ.
+  + Nút "Xem chi tiết": Viền xám mảnh, chữ xám đen.
+
+3. ĐIỀU CHỈNH CSS CHO GỌN GÀNG:
+- Khoảng cách giữa các thẻ đơn hàng thoáng hơn (margin-bottom: 16px).
+- Bỏ bớt bóng mờ rườm rà, dùng border mảnh 1px (#e2e8f0).
+
+Cung cấp đoạn mã HTML cho khối đơn hàng và CSS cập nhật!
+```
+
+### Các bước đã xử lý:
+1. **Xóa bỏ toàn bộ Icon / Emoji thừa trên giao diện:**
+   - **Tiêu đề chính:** Xóa bỏ biểu tượng túi `fa-bag-shopping` / `👜`, chỉ giữ lại chữ in đậm rõ ràng `QUẢN LÝ ĐƠN HÀNG` font chữ chuẩn sàn thương mại điện tử.
+   - **Nút "Kho Voucher":** Xóa bỏ icon SVG vé vàng / emoji `🎟️`, chuyển thành nút viền mảnh gọn gàng: `Kho Voucher (0)`.
+   - **Thanh Tabs trạng thái:** Xóa bỏ icon khiên `🛡️` ở mục "Tra cứu bảo hành". Cả 6 tab ("Tất cả", "Chờ xác nhận", "Đang giao", "Đã giao", "Đã hủy", "Tra cứu bảo hành") hiển thị chữ thuần túy, font chữ đồng bộ.
+   - **Tab Active:** Nền đỏ đô `#991b1b`, chữ trắng sắc nét. Các tab inactive chữ xám `#475569`, hover chuyển đỏ đô.
+2. **Tinh gọn Khối Chi tiết Đơn hàng (Order Card):**
+   - **Header đơn hàng:** Bỏ icon ngôi nhà/shop `🏪` / `fa-store`, chỉ giữ lại text tinh giản: `TechZone Official Store | Mã đơn: ${o.id}`.
+   - **Trạng thái bên phải:** Bỏ icon hộp `📦`, chỉ hiển thị chữ cam / đỏ đô rõ ràng (ví dụ: `Chờ xác nhận`, `Đang vận chuyển`, `Giao hàng thành công`, `Đã hủy`).
+   - **Khung thông tin vận chuyển xanh lá (`.shopee-shipping-strip`):**
+     - Xóa toàn bộ emoji `🚚`, `📦`, `🕒`.
+     - Trình bày 2 dòng thanh lịch:
+       - Dòng 1: `Đơn vị vận chuyển: SPX Express - Đang chuẩn bị hàng` (hoặc `Đang giao hàng`, `Giao hàng thành công`).
+       - Dòng 2: `Cập nhật lúc 23:10 | Đơn hàng đã được khởi tạo thành công`.
+   - **Dòng Tổng tiền:** Xóa bỏ hoàn toàn icon khiên xanh `🛡️` / `shopee-shield-icon` bị lỗi nằm đơn độc ở góc dưới bên trái dòng tổng tiền.
+   - **Cụm nút bấm ở đáy đơn hàng:**
+     - Xóa bỏ toàn bộ các icon `🚫`, `👁️`, `🗺️` / `fa-ban`, `fa-eye`, `fa-route`.
+     - Chỉ để chữ thuần túy: `[ Hủy đơn ]  [ Xem chi tiết ]  [ Theo dõi lộ trình ]`.
+     - Nút "Theo dõi lộ trình": Nền đỏ đô đậm `#991b1b`, chữ trắng, bo góc 6px.
+     - Nút "Hủy đơn": Nền trắng, viền xám mờ `#e2e8f0`, chữ xám đỏ nhẹ `#e11d48`.
+     - Nút "Xem chi tiết": Nền trắng, viền xám mảnh `#cbd5e1`, chữ xám đen `#334155`.
+3. **Điều chỉnh CSS gọn gàng, tinh tế:**
+   - Khoảng cách giữa các thẻ đơn hàng thoáng hơn `margin-bottom: 16px !important;`.
+   - Bỏ bớt bóng mờ rườm rà, sử dụng đường viền mảnh `1px solid #e2e8f0`.
+
+
+---
+
+## <a id="prompt-88"></a>Prompt 88: Refactor toàn diện website TechZone - Đồng bộ 100% Header & Footer, Hệ màu Đen Than Chì (#11141a) - Đỏ Đô Đậm (#991b1b) - Trắng & Tinh giản chi tiết AI/Emoji rác
+
+### Yêu cầu người dùng:
+```text
+Hãy thực hiện một đợt Refactor toàn diện cho toàn bộ website TechZone (bao gồm file style.css và tất cả các trang: index.html, products.html, product-detail.html, checkout.html, history.html, profile.html, login.html, register.html, complete-profile.html) theo đúng 3 yêu cầu cốt lõi sau:
+
+1. ĐỒNG BỘ 100% CẤU TRÚC HEADER VÀ FOOTER TRÊN MỌI TRANG:
+- Header:
+  + Nền Header & Topbar: Tone đen than chì (#11141a và #0a0c10), viền dưới mảnh mờ, không bóng neon.
+  + Nút "Trang chủ", "Danh mục", "Tài khoản": Dạng nút tối giản trong suốt mờ (rgba(255, 255, 255, 0.08)), viền mảnh, chữ trắng.
+  + Nút CTA nổi bật: Chỉ duy nhất nút "Giỏ hàng" và nút "Tìm kiếm" mang màu Đỏ đô đậm (#991b1b), chữ trắng in đậm.
+- Footer:
+  + Đồng bộ cấu trúc 4 cột nền xám đen/than chì (#11141a) cho tất cả các trang: Cột 1 (Logo & Hotline), Cột 2 (Chính sách & Quy định), Cột 3 (Dịch vụ & Tra cứu), Cột 4 (Thanh toán & Chứng nhận Bộ Công Thương).
+  + Chân trang đáy: Góc trái ghi chính xác "© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy.", góc phải ghi "Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc".
+  + Các badge thanh toán đổi sang nền xám đậm tối giản (#1a1e28), bỏ hoàn toàn màu xanh/tím sặc sỡ.
+
+2. LOẠI BỎ TRIỆT ĐỂ TOÀN BỘ MÀU XANH DƯƠNG CŨ TRÊN CẢ NỘI DUNG BÊN TRONG CÁC TRANG:
+- Áp dụng triệt để bộ 3 màu: ĐEN (#11141a) - ĐỎ ĐÔ ĐẬM (#991b1b / hover #7f1d1d) - TRẮNG/XÁM SÁNG (#ffffff / #f8fafc).
+- Toàn bộ nút hành động chính (Thêm giỏ hàng, Mua ngay, Áp dụng mã, Đặt hàng, Lưu thông tin, Đăng nhập, Đăng ký): Chuyển hoàn toàn sang màu Đỏ đô đậm (#991b1b), chữ trắng.
+- Giá bán sản phẩm, điểm nhấn thành tiền: Chuyển toàn bộ sang màu Đỏ đô đậm (#991b1b), font-weight: 800.
+- Các tab lọc sản phẩm, tab trạng thái đơn hàng (Tất cả, Chờ xác nhận, Đã giao...): Mục đang chọn (active) nhận nền Đỏ đô đậm (#991b1b), chữ trắng; mục không chọn nhận chữ xám #475569.
+- Trang Hồ sơ (profile.html): Menu tab đang active bên trái nhận nền đỏ nhạt (#fef2f2) và viền trái đỏ đô (#991b1b).
+- Nút tròn CSKH góc dưới trái: Chuyển nền sang Đỏ đô (#991b1b).
+
+3. TINH GIẢN VÀ XÓA BỚT TOÀN BỘ ICON/EMOJI RÁC (KHỬ MÙI AI):
+- Xóa bỏ việc nhồi nhét emoji trước các tiêu đề và nút bấm (bỏ túi xách 👜, khiên 🛡️, vé vàng 🎟️, xe tải 🚚, gói hàng 📦...).
+- Tại trang history.html: Bỏ hoàn toàn chữ "(Shopee Style)" ở breadcrumb; bỏ cụm emoji trong khung trạng thái vận chuyển và đáy đơn hàng; các nút bấm chỉ để chữ thuần túy: [Hủy đơn] [Xem chi tiết] [Theo dõi lộ trình].
+- Tại trang profile.html: Bỏ avatar chữ "TM" 2 màu lòe loẹt, thay bằng avatar chân thực tinh tế; bỏ icon vàng/xanh lơ ở 3 thẻ thống kê, chuyển sang dạng số liệu tối giản viền mảnh.
+- Đảm bảo trong <head> mọi file có nhúng CDN Font Awesome 6.5.1 và bộ font Inter để không bị lỗi ký tự ô vuông rỗng [▯].
+
+Hãy cung cấp đoạn mã CSS ghi đè hoàn chỉnh và cập nhật các file HTML tương ứng!
+```
+
+### Các bước đã xử lý:
+1. **Đồng bộ 100% Cấu trúc Header & Footer trên toàn bộ các trang:**
+   - **Header & Topbar:**
+     - Topbar nền đen than chì sâu `#0a0c10`, viền dưới mảnh mờ `#1e242d`.
+     - Header chính nền đen than chì `#11141a`, bóng đổ tự nhiên mờ nhẹ `0 4px 16px rgba(0, 0, 0, 0.25)`, triệt tiêu hoàn toàn hiệu ứng phát sáng neon cũ.
+     - Nút "Trang chủ", "Danh mục", "Tài khoản": Thiết kế nút tối giản trong suốt mờ (`background: rgba(255, 255, 255, 0.08)`, `border: 1px solid rgba(255, 255, 255, 0.15)`, chữ trắng), hover sáng thanh lịch.
+     - Nút CTA nổi bật duy nhất: Nút "Giỏ hàng" và nút "Tìm kiếm" phủ nền Đỏ đô đậm `#991b1b` (hover `#7f1d1d`), chữ trắng in đậm nổi bật.
+   - **Footer 4 cột chuẩn doanh nghiệp:**
+     - Đồng bộ cấu trúc 4 cột trên nền xám đen/than chì `#11141a` cho 100% các trang (`index.html`, `products.html`, `product-detail.html`, `checkout.html`, `history.html`, `profile.html`, `login.html`, `register.html`, `complete-profile.html`).
+     - Cập nhật các badge thanh toán (COD, VNPAY, MoMo, Visa/Master, Trả góp 0%) sang khung xám đậm tối giản `#1a1e28`, viền `#27272a`, chữ sáng `#e2e8f0`.
+     - Hộp chứng nhận đăng ký Bộ Công Thương nền `#1a1e28` đồng bộ.
+     - Dải chân trang đáy nền `#0a0c10`: Cột trái `© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy.`, cột phải `Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc`.
+2. **Loại bỏ triệt để màu xanh dương cũ trên nội dung toàn website:**
+   - Quy chuẩn đồng nhất 3 tone màu: Đen than chì (`#11141a`) - Đỏ đô đậm (`#991b1b` / hover `#7f1d1d`) - Trắng/Xám sáng (`#ffffff` / `#f8fafc`).
+   - Mọi nút bấm hành động chính (Thêm vào giỏ hàng, Mua ngay, Áp dụng mã, Đặt hàng, Lưu thông tin, Đăng nhập, Đăng ký): Đồng loạt chuyển sang nền Đỏ đô đậm `#991b1b`, chữ trắng, bo góc 8px.
+   - Giá bán sản phẩm & Tổng tiền đơn hàng: Chuyển toàn bộ sang màu Đỏ đô đậm `#991b1b`, `font-weight: 800`.
+   - Các tab lọc sản phẩm & tab trạng thái đơn hàng: Tab active nền Đỏ đô đậm `#991b1b` chữ trắng; tab inactive chữ xám `#475569`.
+   - Trang cá nhân (`profile.html`): Menu tab active nhận nền đỏ nhạt `#fef2f2`, chữ đỏ đô `#991b1b` và viền trái `3px solid #991b1b`.
+   - Nút CSKH nổi góc dưới trái: Chuyển sang màu Đỏ đô `#991b1b`.
+3. **Tinh giản & dọn sạch các chi tiết AI / Emoji thừa:**
+   - Xóa bỏ toàn bộ emoji thừa rác trước các tiêu đề hoặc nút bấm trên các trang.
+   - Sửa lỗi icon vị trí `📍` trong popup sổ địa chỉ `checkout.html` thành icon Font Awesome `<i class="fa-solid fa-location-dot"></i>`.
+   - Loại bỏ hoàn toàn ghi chú "(Shopee Style)" ở breadcrumb `history.html`; dải vận chuyển và nút bấm dưới đơn hàng hiển thị text thuần túy: `[ Hủy đơn ]  [ Xem chi tiết ]  [ Theo dõi lộ trình ]`.
+   - Trang `profile.html`: Avatar chân dung thanh lịch tối giản, 3 thẻ thống kê (Điểm tích lũy, Tổng chi tiêu, Đơn hàng hoàn tất) viền mảnh tinh tế.
+   - Rà soát toàn bộ thẻ `<head>` của 9 file HTML đảm bảo nạp đầy đủ Font Awesome 6.5.1 CDN và bộ font Google Inter, triệt tiêu 100% lỗi icon ô vuông [▯].
+
+
+---
+
+## <a id="prompt-89"></a>Prompt 89: Đồng bộ hóa 100% Header và Footer toàn bộ các trang chuẩn Retail - Khử sạch icon rác Cột 2/3 Footer & Chống đè nút CSKH
+
+### Yêu cầu người dùng:
+```text
+Hãy đồng bộ hóa 100% Header và Footer cho TOÀN BỘ các file HTML trong dự án TechZone (index.html, products.html, product-detail.html, checkout.html, history.html, profile.html, login.html, register.html, complete-profile.html) theo đúng mẫu thiết kế chuẩn sau:
+
+1. ĐỒNG BỘ HEADER CHUẨN (HÌNH ẢNH HEADER MẪU):
+- Topbar:
+  + Nền đen: background: #0a0c10; border-bottom: 1px solid rgba(255,255,255,0.06);
+  + Chứa: Nút chọn khu vực [📍 TP. Hồ Chí Minh ⌵] (có modal chọn 6 tỉnh thành), [Hệ thống 86 chi nhánh], [Tin tức TechZone], và bên phải là [Hotline: 1800.6868].
+- Thanh Header chính:
+  + Nền đen than chì: background: #11141a; border-bottom: 1px solid rgba(255,255,255,0.08);
+  + Logo TechZone: Icon chip nền đỏ đô (#991b1b), chữ TechZone trắng đậm.
+  + Nút "Trang chủ" & "Danh mục": Nền kính mờ (background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; border-radius: 8px;).
+  + Khung Tìm kiếm: Nền trắng tinh bo tròn 8px, nút "Tìm kiếm" màu ĐỎ ĐÔ ĐẬM (#991b1b) nằm lọt lòng bên phải, bên dưới có dòng gợi ý từ khóa (iPhone 16, S24 Ultra, MacBook, AirPods...).
+  + Nút "Tài khoản": Nền kính mờ đồng bộ (chưa đăng nhập hiện "Đăng nhập", đã đăng nhập hiện tên user; chỉ bung menu khi đã đăng nhập).
+  + Nút "Giỏ hàng": Nền ĐỎ ĐÔ ĐẬM (#991b1b), chữ trắng, badge số lượng tròn ở góc phải.
+
+2. SỬA VÀ ĐỒNG BỘ FOOTER CHUẨN TINH TẾ (HÌNH ẢNH FOOTER MẪU):
+- Nền Footer: Đen than chì (#11141a), viền trên border-top: 1px solid #1e2330.
+- XÓA BỎ TOÀN BỘ ICON/SVG RÁC Ở CỘT 2 VÀ CỘT 3:
+  + Cột 2 (CHÍNH SÁCH & QUY ĐỊNH) và Cột 3 (DỊCH VỤ & TRA CỨU): Tuyệt đối không dùng các ký tự lạ hoặc icon SVG rườm rà phía trước. Chuyển thành link chữ thuần sạch sẽ (Clean Typography), có thể dùng dấu chấm tròn mảnh hoặc padding đều nhau. Màu chữ #94a3b8, hover đổi sang đỏ nhạt (#f87171).
+  + Cột 1: Logo TechZone, đoạn giới thiệu và 3 dòng Hotline (Tư vấn 1800.6868, Kỹ thuật 1800.6869, Bảo hành 1800.6870) căn thẳng hàng từ trái sang phải, không vỡ layout.
+  + Cột 4: Các badge thanh toán (COD, VNPAY, MoMo, Visa/Master, Trả góp 0%) dùng nền tối phẳng đồng bộ (#1a1e28, viền #282f40, chữ trắng xám), khối Bộ Công Thương gọn gàng.
+- DÒNG CHÂN TRANG ĐÁY (FOOTER BOTTOM):
+  + Nền: #0a0c10; border-top: 1px solid #161a23.
+  + Góc trái ghi chuẩn: "© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy."
+  + Góc phải ghi: "Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc"
+  + Thêm padding-left tối thiểu 80px để nút tròn CSKH hỗ trợ 24/7 tuyệt đối không che khuất dòng chữ bản quyền.
+
+Cung cấp toàn bộ khối mã HTML Header, HTML Footer và đoạn CSS chuẩn hóa để dán đè đồng loạt!
+```
+
+### Các bước đã xử lý:
+1. **Đồng bộ Header 100% chuẩn hình ảnh mẫu trên tất cả 11 file HTML:**
+   - **Topbar:** Nền `#0a0c10`, viền dưới `rgba(255,255,255,0.06)`, nút chọn khu vực `[📍 TP. Hồ Chí Minh ⌵]` (kèm dropdown 6 tỉnh thành chuẩn), liên kết `Hệ thống 86 chi nhánh`, `Tin tức TechZone` và hotline bên phải `Hotline: 1800.6868`.
+   - **Thanh Header chính:** Nền đen than chì `#11141a`, viền dưới `rgba(255,255,255,0.08)`.
+   - **Logo TechZone:** Icon chip nền đỏ đô `#991b1b`, chữ TechZone trắng đậm.
+   - **Nút "Trang chủ" & "Danh mục":** Nền kính mờ trong suốt `rgba(255,255,255,0.08)`, viền mảnh `rgba(255,255,255,0.15)`, chữ trắng tinh, bo góc 8px.
+   - **Khung Tìm kiếm:** Nền trắng tinh bo tròn 8px, nút "Tìm kiếm" màu Đỏ đô đậm `#991b1b` nằm lọt lòng bên phải; bên dưới có dòng từ khóa gợi ý tự nhiên: `iPhone 16 Pro Max, Galaxy S24 Ultra, MacBook Pro M3, AirPods Pro`.
+   - **Nút "Tài khoản":** Nền kính mờ đồng bộ (`rgba(255,255,255,0.08)`), tự động hiển thị "Đăng nhập" khi chưa đăng nhập, hiển thị họ tên người dùng khi đã đăng nhập; menu dropdown chỉ mở khi đã đăng nhập.
+   - **Nút "Giỏ hàng":** Nền Đỏ đô đậm `#991b1b`, chữ trắng, badge số lượng tròn độc lập ở góc trên bên phải.
+2. **Sửa và đồng bộ Footer chuẩn tinh tế trên toàn bộ các file HTML:**
+   - **Nền Footer:** Đen than chì `#11141a`, viền trên `border-top: 1px solid #1e2330`.
+   - **Cột 1 (Logo & Hotline):** 3 dòng hotline căn thẳng hàng ngang, không vỡ dòng: Tư vấn mua hàng `1800.6868`, Kỹ thuật `1800.6869`, Bảo hành `1800.6870`.
+   - **Cột 2 (CHÍNH SÁCH & QUY ĐỊNH) & Cột 3 (DỊCH VỤ & TRA CỨU):** Loại bỏ 100% các ký tự lạ, icon lỗi và SVG rác rườm rà. Chuyển sang chuẩn Clean Typography với text `#94a3b8`, hover sang đỏ nhạt `#f87171`.
+   - **Cột 4 (Thanh toán & Chứng nhận):** Các badge thanh toán (COD, VNPAY, MoMo, Visa/Master, Trả góp 0%) dùng nền tối phẳng `#1a1e28`, viền `#282f40`, chữ trắng xám `#cbd5e1`; hộp chứng nhận Bộ Công Thương nền `#1a1e28` gọn gàng đồng bộ.
+   - **Dòng chân trang đáy (Footer Bottom):** Nền `#0a0c10`, viền `1px solid #161a23`. Cột trái: `© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy.`, cột phải: `Hệ thống bán lẻ & bảo hành công nghệ chính hãng trên toàn quốc`. Bổ sung `padding-left: 110px` để nút tròn CSKH hỗ trợ 24/7 tuyệt đối không che khuất dòng chữ bản quyền.
+
+
+---
+
+## <a id="prompt-90"></a>Prompt 90: Thu gọn Header Slim Compact, Sửa icon lỗi [▯] Footer, Shipping Strip xám thanh lịch & Chuẩn hóa Voucher
+
+### Yêu cầu người dùng:
+```text
+Cập nhật đồng bộ các file style.css, history.html và vouchers.html trong dự án TechZone để sửa dứt điểm 4 lỗi:
+1. Thu gọn chiều cao Header (Slim Compact Header)
+2. Khắc phục triệt để lỗi Logo và Icon Footer (ô vuông [▯])
+3. Sửa giao diện trang Quản lý đơn hàng (history.html): shipping strip xanh lá chói → xám sáng
+4. Sửa giao diện Kho Voucher (vouchers.html): bỏ viền nét đứt cam, chuẩn hóa e-commerce
+```
+
+### Các bước đã xử lý:
+1. **Thu gọn Header Slim Compact:**
+   - Giảm padding `.tz-main-header` xuống `8px 0`.
+   - Chiều cao các nút Trang chủ, Danh mục, Tài khoản, Giỏ hàng cố định `40px`.
+   - Khung tìm kiếm giảm xuống `40px`, dòng gợi ý từ khóa gọn 1 hàng `white-space: nowrap`.
+2. **Sửa triệt để Logo & Icon Footer:**
+   - Logo Footer: Chữ "Tech" trắng, "Zone" đỏ đô `#991b1b`, font-size 22px, font-weight 800.
+   - Loại bỏ hoàn toàn các icon Font Awesome trong badge thanh toán (COD, VNPAY, MoMo, Visa/Master, Trả góp) → chữ thuần túy sạch sẽ, nền `#1e2330`, viền `#2e3648`, chữ `#e2e8f0`.
+   - Icon hotline Cột 1: Đổi từ xanh dương sang đỏ đô `#991b1b`.
+3. **History.html - Shipping Strip:**
+   - Đổi nền xanh lá chói (`#f0fdf4`) sang xám sáng thanh lịch (`#f8fafc`), viền `#e2e8f0`, chữ `#334155`.
+   - Tên "SPX Express" đổi sang đỏ đô `#991b1b`, nút "Chi tiết >" sang `#64748b`.
+   - Thay thế toàn bộ 8 occurrence `#ee4d2d` (cam Shopee) sang `#991b1b` trong `js/main.js`.
+4. **Vouchers.html - Chuẩn hóa E-commerce:**
+   - Bỏ hoàn toàn viền nét đứt cam vàng (`border: 1.5px dashed #fdba74`), đổi sang card bo góc 10px nền trắng viền `#e2e8f0`.
+   - Hero card: Bỏ gradient cam, chuyển trắng tinh viền mảnh.
+   - Nút "Lưu vào ví": Nền đỏ đô `#991b1b`, hover `#7f1d1d`.
+   - Tabs voucher: Active nền đỏ đô `#991b1b` chữ trắng, inactive nền trắng viền xám mờ.
+   - Breadcrumb link: Đổi từ `var(--tz-blue)` sang `#991b1b`.
+
+
+---
+
+## <a id="prompt-91"></a>Prompt 91: Đồng bộ hóa toàn diện 8 điểm giao diện TechZone - Logo trắng tinh, Tab đơn hàng chữ trắng, Tiến trình vận chuyển chuẩn màu, Loading đen & Triệt tiêu xanh
+
+### Yêu cầu người dùng:
+```text
+Cập nhật toàn bộ các file style.css, main.js, vouchers.html, history.html, tracking-detail.html và product-detail.html trong dự án TechZone để giải quyết dứt điểm 8 lỗi giao diện sau:
+1. ĐỒNG NHẤT LOGO TECHZONE TRÊN TOÀN BỘ CÁC TRANG & FOOTER:
+   - Cả Header và Footer dùng chung một kiểu Logo duy nhất: Icon chip vi mạch nền đỏ đô (#991b1b), icon microchip trắng. Toàn bộ từ "TechZone" đều là màu trắng tinh (#ffffff), font-weight: 800, không chia chữ "Zone" thành màu đỏ chìm vào nền đen.
+2. SỬA LỖI MÀU CHỮ TAB TRANG QUẢN LÝ ĐƠN HÀNG (history.html):
+   - Khi chọn tab: background: #991b1b !important; color: #ffffff !important; (sửa triệt để chữ đỏ chìm vào nền đỏ).
+   - Các tab chưa chọn: color: #475569; hover: color: #991b1b; background: transparent;.
+3. CHUẨN HÓA TIẾN TRÌNH ĐƠN HÀNG (POPUP XEM NHANH & TRANG TRACKING-DETAIL.HTML):
+   - Mốc ĐÃ HOÀN THÀNH: Icon tròn và đường nối chuyển sang màu xám trung tính (background: #64748b; color: #ffffff; border-color: #64748b;). Chữ chú thích màu xám #64748b.
+   - Mốc ĐANG XỬ LÝ (Hiện tại): Sử dụng màu đỏ đô đậm (background: #991b1b; color: #ffffff; border-color: #991b1b; box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.2);).
+   - Triệt tiêu toàn bộ màu xanh lá (#22c55e, #10b981) và xanh dương (#0284c7) ở các vòng tròn tiến trình, nhật ký di chuyển và checkpoints.
+4. CHUYỂN MÀU LOADING TOÀN TRANG SANG ĐEN:
+   - #pageLoader và .loader-spinner: Vòng quay xoay border: 3px solid #e2e8f0; border-top-color: #0f1115 !important; border-right-color: transparent !important;.
+   - Dấu chấm loader (.loader-dot): background: #0f1115 !important;.
+   - Chữ TechZone khi loading: color: #0f1115 !important;.
+5. TRANG CHI TIẾT SẢN PHẨM (product-detail.html):
+   - Khối "Sản Phẩm Tương Tự Bạn Có Thể Thích": Nút "Thêm vào giỏ hàng" đổi từ xanh dương sang background: #991b1b !important; border-color: #7f1d1d !important; color: #ffffff !important; hover: background: #7f1d1d !important;.
+   - Link "Xem tất cả >": color: #991b1b !important;.
+6. TOPBAR HEADER:
+   - Icon hotline hỗ trợ (📞 / 🎧): Đổi từ xanh dương (#38bdf8) sang đỏ đô (#991b1b !important;).
+7. TRANG KHO VOUCHER (vouchers.html):
+   - Sửa lỗi nút hành động bị mất chữ khi danh sách trống: Nút link dài dưới "Bạn chưa có mã giảm giá nào" bổ sung chữ rõ ràng: "Khám phá sản phẩm ngay", font-weight: 700; color: #ffffff !important; text-align: center; line-height: 44px; display: inline-flex; align-items: center; justify-content: center; background: #991b1b.
+8. MENU XỔ XUỐNG CỦA DANH MỤC VÀ KHU VỰC NHẬN HÀNG:
+   - Icon trong menu danh mục: Nền icon đổi sang #f8fafc, icon màu #475569 hoặc #991b1b.
+   - Dòng link dưới cùng "Xem toàn bộ 500+ sản phẩm TechZone": Đổi icon và chữ sang màu đỏ đô #991b1b.
+   - Menu chọn khu vực (Hà Nội, TP.HCM...): Dấu tích chọn active đổi từ xanh sang đỏ đô #991b1b.
+```
+
+### Các bước đã xử lý:
+1. **Đồng nhất Logo TechZone trắng tinh trên toàn bộ website:**
+   - Cập nhật `.tz-logo`, `.tz-logo div`, `.tz-logo span`, `.tz-logo .accent`, `.tz-footer .tz-logo div`, `.tz-footer .tz-logo .accent` thành màu trắng tinh `#ffffff !important;` với `font-weight: 800 !important;`.
+   - Khung icon chip vi mạch nền đỏ đô `#991b1b !important;`, SVG microchip trắng tinh đồng bộ ở cả Header và Footer.
+2. **Sửa dứt điểm lỗi tàng hình màu chữ Tab Quản lý đơn hàng (`history.html`):**
+   - Loại bỏ xung đột độ ưu tiên CSS cũ tại `.shopee-tabs-nav .shopee-tab-item.active` (từng ép `color: #ee4d2d !important;`).
+   - Ép quy tắc chuẩn: `background: #991b1b !important; color: #ffffff !important; border-color: #991b1b !important; font-weight: 700 !important;`, ẩn gạch chân `::after`.
+   - Các tab chưa chọn hiển thị chữ xám `#475569`, hover chuyển màu đỏ đô `#991b1b` trên nền mờ `rgba(153, 27, 27, 0.06)`.
+3. **Chuẩn hóa hệ màu tiến trình đơn hàng (Popup xem nhanh & trang `tracking-detail.html`):**
+   - Mốc ĐÃ HOÀN THÀNH: Icon tròn, viền và đường nối chuyển sang xám trung tính `#64748b !important;`, chữ tên mốc và mốc thời gian `#64748b !important;`.
+   - Mốc ĐANG XỬ LÝ (Hiện tại): Sử dụng màu đỏ đô đậm `#991b1b !important;` với vòng hào quang phát xung `pulseGlowRed` mềm mại (`box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.2)`). Chữ mô tả in đậm màu `#991b1b !important;`.
+   - Triệt tiêu toàn bộ màu xanh lá (`#22c55e`, `#10b981`) và xanh dương (`#0284c7`) ở các vòng tròn tiến trình, nhật ký di chuyển và thẻ checkpoint tag (`.spx-v-tag` nền `#fef2f2`, viền `#fecaca`, chữ `#991b1b`).
+   - Cập nhật các icon route và clock trên `tracking-detail.html` từ cam `#ee4d2d` sang đỏ đô `#991b1b`.
+4. **Chuyển màu Loading toàn trang sang đen thương hiệu:**
+   - Vòng xoay `.loader-spinner`: `border: 3px solid #e2e8f0; border-top-color: #0f1115 !important; border-right-color: transparent !important;`.
+   - Dấu chấm nhấp nháy `.loader-dot`: `background: #0f1115 !important;`.
+   - Chữ thương hiệu `.loader-brand`: `color: #0f1115 !important;`.
+5. **Trang Chi tiết sản phẩm (`product-detail.html`):**
+   - Nút "Thêm vào giỏ hàng" trong khối "Sản Phẩm Tương Tự Bạn Có Thể Thích" (`.tz-related-grid .btn-card-add`): Đổi từ xanh dương `#0284c7` sang đỏ đô `#991b1b !important;`, viền `#7f1d1d !important;`, chữ trắng `#ffffff !important;`, hover sang đỏ trầm `#7f1d1d !important;`.
+   - Link "Xem tất cả >" (`.view-all-link`): Đổi sang màu đỏ đô `#991b1b !important;`, hover gạch chân sang `#7f1d1d`.
+6. **Topbar Header:**
+   - Đổi icon hotline hỗ trợ (📞 / 🎧) trong `.topbar-hotline i` từ xanh dương `#38bdf8` sang đỏ đô `#991b1b !important;`.
+7. **Trang Kho Voucher (`vouchers.html`):**
+   - Bổ sung chữ rõ ràng "Khám phá sản phẩm ngay" vào nút link điều hướng khi danh sách rỗng trong `js/main.js`.
+   - Thiết lập CSS `.empty-vouchers-box a` và `.btn-voucher-explore`: `display: inline-flex !important; align-items: center !important; justify-content: center !important; line-height: 44px !important; min-height: 44px !important; background: #991b1b !important; color: #ffffff !important; font-weight: 700 !important; padding: 0 2rem !important; border-radius: 8px !important;`.
+8. **Menu xổ xuống của Danh mục và Khu vực nhận hàng:**
+   - Menu danh mục (`.tz-cat-icon`): Nền icon `#f8fafc`, màu xám `#475569`. Khi hover chuyển nền hồng nhạt `#fef2f2`, icon và chữ đổi sang đỏ đô `#991b1b`.
+   - Dòng liên kết footer dropdown "Xem toàn bộ 500+ sản phẩm TechZone": Chữ và icon đổi sang màu đỏ đô `#991b1b !important;`.
+   - Menu chọn khu vực: Dấu tích `.tz-city-check` và item đang chọn (`.tz-location-item.active`) đổi hoàn toàn từ xanh `#0284c7` sang đỏ đô `#991b1b !important;` trên nền `#fef2f2`.
+
+
+---
+
+## <a id="prompt-92"></a>Prompt 92: Sửa dứt điểm 7 lỗi giao diện - Popup Voucher, Khung Thanh Toán, Login/Register Khử Xanh, Flashsale, Footer Copyright, Timeline Icons & Responsive Mobile First
+
+### Yêu cầu người dùng:
+```text
+Cập nhật đồng bộ các file style.css, checkout.html, login.html, register.html, tracking-detail.html và main.js trong dự án TechZone để sửa dứt điểm các lỗi sau:
+1. SỬA LỖI POPUP VOUCHER & HIGHLIGHT NÚT CHỌN (Hình 1):
+   - Nút "Chọn Voucher từ ví của bạn": Bỏ trạng thái viền đỏ/background đỏ nhạt highlight thô cứng; chuyển thành nút link chữ xanh xám thanh lịch, hover có gạch chân nhẹ.
+   - Modal #tz-voucher-modal: Overlay z-index: 9999999, pointer-events: auto, background: rgba(0,0,0,0.6). Modal card z-index: 10000000. Click nút ✕ (#btn-close-voucher-modal) đóng modal ngay lập tức; click vùng mờ overlay ngoài đóng modal và chặn tương tác xuyên xuống trang dưới (e.stopPropagation()).
+2. ĐỒNG BỘ THANH TOÁN (Hình 2):
+   - Khung "2. Hình Thức Vận Chuyển" & "3. Phương Thức Thanh Toán": Item được chọn nền #fef2f2, viền 1.5px solid #991b1b, radio button accent-color: #991b1b. Bỏ toàn bộ màu xanh lá, xanh dương ở các icon/chữ trong khung này.
+3. KHỬ MÀU XANH & FIX ICON TẠI TRANG ĐĂNG NHẬP / ĐĂNG KÝ (Hình 3 & 4):
+   - Khử sạch màu xanh dương/cyan ở: Logo mini "TechZone" cột trái (chữ trắng tinh, không dùng chữ Zone xanh lơ), Badge "BƯỚC 1/2" nền #fef2f2, viền và chữ đỏ đô #991b1b, Khung input khi focus border-color #991b1b và shadow đỏ mờ, toàn bộ link "Quên mật khẩu?", "Đăng nhập ngay", "Điều khoản dịch vụ" color #991b1b.
+   - Sửa lỗi mất icon ở ô "Xác nhận lại mật khẩu": Đảm bảo thẻ <i class="fa-solid fa-shield-halved"></i> hiển thị rõ nét bên trái ô nhập.
+4. CHUẨN HÓA FLASHSALE (Hình 5):
+   - Nhãn "⚡ ĐANG DIỄN RA": Chữ màu TRẮNG TINH (color: #ffffff !important;), nền đỏ đô đậm #991b1b.
+   - Thanh tiến trình "Đã bán X/100 suất": Căn thẳng hàng bằng nhau ở đáy mọi thẻ sản phẩm (margin-top: auto). Nền thanh #fee2e2, thanh tiến trình chạy background #991b1b, chữ "Đã bán..." font-size 11.5px, màu chữ #ffffff sắc nét.
+5. FOOTER & BẢN QUYỀN (Hình 6):
+   - Chữ "TechZone" ở Logo Footer: Cả chữ Tech và chữ Zone có kích thước font-size bằng nhau (22px), font-weight: 800, màu trắng tinh (#ffffff).
+   - Dòng bản quyền "© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy.": Thêm padding-left: 90px (Desktop) hoặc 70px (Mobile) để chữ dạt hẳn sang trái ngay ngắn, không bị nút tròn CSKH đè lên.
+6. TIẾN TRÌNH ĐƠN HÀNG (POPUP & TRACKING-DETAIL - Hình 7):
+   - Bước ĐÃ HOÀN THÀNH: Vòng tròn đổi sang màu XÁM (#64748b), BÊN TRONG VẪN GIỮ ICON font awesome (<i class="fa-solid fa-check"></i> hoặc icon bước) màu trắng. Vạch nối màu xám #cbd5e1.
+   - Bước HIỆN TẠI ĐANG XỬ LÝ: Vòng tròn màu ĐỎ ĐÔ ĐẬM (#991b1b), icon bên trong màu trắng.
+   - Triệt tiêu màu xanh dương (#0284c7) và xanh lá cây (#22c55e).
+7. TỐI ƯU RESPONSIVE MOBILE FIRST (Hình 8, 9, 10):
+   - @media (max-width: 768px):
+     + Ẩn hoàn toàn dòng từ khóa gợi ý dưới ô tìm kiếm (display: none !important;) để thu gọn tối đa chiều cao Header.
+     + Header Mobile: Giảm padding còn 6px 10px. Ô tìm kiếm cao 36px.
+     + Nút Giỏ hàng trên Mobile: Thiết kế dạng Icon tròn 38px x 38px nền đỏ đô (#991b1b), ẩn chữ "Giỏ hàng Thanh toán", giữ badge số đỏ ở góc trên.
+     + Khử sạch màu xanh dương ở nút "Thêm vào giỏ hàng" trên Mobile (chuyển sang #991b1b).
+     + Trang Profile trên Mobile: Khắc phục lỗi tràn viền form, căn lề padding 12px vừa khít màn hình, đảm bảo nút CSKH không che khuất các nút bấm form.
+```
+
+### Các bước đã xử lý:
+1. **Sửa lỗi Popup Voucher & Highlight nút chọn (`checkout.html`, `js/main.js`, `css/style.css`):**
+   - Loại bỏ style đỏ thô cứng khỏi `.btn-select-voucher-link`, `#btn-open-voucher-modal`. Đưa về dạng link chữ xanh xám thanh lịch `#475569`, hover `#1e293b` có gạch chân nhẹ, icon ví xám `#64748b`.
+   - Cấu hình `#tz-voucher-modal`: `z-index: 9999999 !important; background: rgba(0, 0, 0, 0.6) !important; pointer-events: auto !important;`, hộp thoại `.tz-voucher-modal-card`: `z-index: 10000000 !important;`.
+   - Bổ sung trình xử lý đóng modal lập tức khi click nút ✕ (`#btn-close-voucher-modal`) hoặc click vùng overlay mờ, gọi `e.stopPropagation()` và `e.preventDefault()` để chặn tương tác xuyên xuống trang dưới.
+2. **Đồng bộ Thanh toán (`checkout.html`, `css/style.css`):**
+   - Khung "2. Hình Thức Vận Chuyển" & "3. Phương Thức Thanh Toán": Khi được chọn, thẻ mang nền `#fef2f2 !important;` và viền `1.5px solid #991b1b !important;`. Nút radio mang `accent-color: #991b1b !important;`.
+   - Thay toàn bộ màu xanh lá (`text-success`), xanh dương (`text-primary`, `var(--tz-cyan)`) ở icon Hỏa tốc, COD, VNPAY sang đỏ đô `#991b1b` và xám `#64748b`.
+3. **Khử màu xanh & sửa icon trang Đăng nhập / Đăng ký (`login.html`, `register.html`, `complete-profile.html`, `css/style.css`):**
+   - Đổi `logo-mini` ở cột trái banner từ `Tech<span style="color: #38bdf8;">Zone</span>` sang chữ trắng tinh `Tech<span style="color: #ffffff;">Zone</span>`.
+   - Badge "BƯỚC 1/2": Đổi sang nền `#fef2f2`, viền và chữ màu đỏ đô `#991b1b`.
+   - Khung input khi focus: `border-color: #991b1b !important; box-shadow: 0 0 0 3px rgba(153, 27, 27, 0.15) !important;`.
+   - Link "Quên mật khẩu?", "Đăng nhập ngay", "Điều khoản dịch vụ": Màu đỏ đô `#991b1b !important;`, hover có gạch chân.
+   - Sửa lỗi mất icon ở ô "Xác nhận lại mật khẩu": Thay icon FA Pro `fa-shield-check` bằng icon chuẩn FA Free `fa-shield-halved` hiển thị rõ nét.
+4. **Chuẩn hóa Flashsale (`index.html`, `js/main.js`, `css/style.css`):**
+   - Nhãn "⚡ ĐANG DIỄN RA" (`#flashsale-status-badge`, `.flashsale-badge-live`): Nền đỏ đô `#991b1b !important;`, chữ trắng tinh `#ffffff !important;`, viền `#7f1d1d !important;`.
+   - Thanh tiến trình `.tz-sold-bar`: Thêm `margin-top: auto !important;` giúp căn thẳng hàng ngang ở đáy mọi thẻ sản phẩm. Nền thanh `#fee2e2 !important;`, thanh chạy `#991b1b !important;`, chữ "Đã bán X/100 suất" cỡ `11.5px`, màu `#ffffff !important;` kèm text-shadow sắc nét.
+5. **Footer & Bản quyền (`css/style.css`):**
+   - Logo Footer: Cả chữ "Tech" và "Zone" kích thước bằng nhau `22px`, `font-weight: 800`, màu trắng tinh `#ffffff !important;`.
+   - Dòng bản quyền: Thêm `padding-left: 90px !important;` (Desktop) và `padding-left: 70px !important;` (Mobile) vào `.footer-bottom-bar` giúp chữ dạt sang trái, tránh bị nút tròn CSKH đè lên.
+6. **Tiến trình đơn hàng (`tracking-detail.html`, `js/main.js`, `css/style.css`):**
+   - Bước ĐÃ HOÀN THÀNH: Vòng tròn màu xám `#64748b !important;`, bên trong giữ nguyên icon Font Awesome (`fa-check`) màu trắng `#ffffff !important;`. Vạch nối màu xám `#cbd5e1 !important;`.
+   - Bước HIỆN TẠI: Vòng tròn màu đỏ đô đậm `#991b1b !important;`, icon màu trắng `#ffffff !important;`.
+   - Triệt tiêu hoàn toàn màu xanh dương `#0284c7` và xanh lá `#22c55e`.
+7. **Tối ưu Responsive Mobile First (`css/style.css`):**
+   - Header Mobile: Giảm padding còn `6px 10px`, ô tìm kiếm cao `36px`, ẩn hoàn toàn dòng từ khóa gợi ý (`.search-hot-keywords { display: none !important; }`).
+   - Nút Giỏ hàng Mobile: Icon tròn `38px x 38px` nền đỏ đô `#991b1b !important;`, ẩn text "Giỏ hàng Thanh toán", badge số đỏ `#dc2626` viền trắng ở góc.
+   - Nút "Thêm vào giỏ hàng" Mobile: Đổi sang đỏ đô `#991b1b !important;`.
+   - Trang Profile Mobile: Căn lề padding `12px` vừa khít màn hình, các hàng form xếp 1 cột dọc `1fr`, nút "Lưu thay đổi" full width, tăng khoảng đệm đáy `padding-bottom: 60px` đảm bảo nút CSKH không che khuất form.
+
+
+---
+
+## <a id="prompt-93"></a>Prompt 93: Chuẩn hóa Flashsale Full Đỏ (#991b1b), Icon Checkout Xám (#64748b), Footer Bản Quyền Dạt Trái, Logo Login Đen Tuyền / Register Trắng & Triệt Tiêu Nút Xanh Mobile
+
+### Yêu cầu người dùng:
+```text
+Cập nhật toàn bộ các file style.css, login.html, register.html và index.html (cùng checkout.html) trong dự án TechZone để giải quyết dứt điểm các lỗi sau:
+1. CHUẨN HÓA THANH FLASHSALE "ĐÃ BÁN...":
+   - Căn thẳng hàng bằng nhau 100% ở đáy mọi card sản phẩm: .flashsale-cards-grid .product-card có display: flex; flex-direction: column;, và khối tiến trình .flash-sale-progress { margin-top: auto; margin-bottom: 10px; width: 100%; }.
+   - Cả 5 thanh đều KÉO TRÀN ĐẦY 100%: background: #991b1b !important;.
+   - CHỮ BÊN TRONG THANH ĐÃ BÁN: Ép sang MÀU TRẮNG TINH (color: #ffffff !important;), font-weight: 700; font-size: 11.5px; text-align: center; line-height: 20px;. Bỏ hoàn toàn các thanh màu hồng nhạt làm chìm chữ.
+2. ĐỒNG BỘ ICON MỤC VẬN CHUYỂN & THANH TOÁN (Trang checkout.html):
+   - Toàn bộ icon trong khung "2. Hình Thức Vận Chuyển" (Hỏa tốc, Tiêu chuẩn) và "3. Phương Thức Thanh Toán" (COD, VNPAY, MoMo, Trả góp): Đổi toàn bộ sang MÀU XÁM TRUNG TÍNH (color: #64748b !important; fill: #64748b !important; stroke: #64748b !important;). Bỏ sạch các màu xanh dương, xanh lá, tím MoMo, vàng cam ở icon để giao diện sạch sẽ, đồng bộ.
+3. DÒNG BẢN QUYỀN FOOTER DẠT SANG GÓC TRÁI:
+   - Sửa lại khối .footer-bottom-bar: Dòng chữ "© 2026 TechZone. Bản quyền thuộc Thanh Toàn - Bảo Vy." phải nằm sát hẳn về góc bên trái, thêm padding-left: 95px (Desktop) hoặc 70px (Mobile) để né nút CSKH tròn, không để nằm lơ lửng ở giữa trang.
+4. SỬA LỖI LOGO TRANG ĐĂNG NHẬP & ĐĂNG KÝ (login.html & register.html):
+   - Trang Đăng nhập (login.html): Bổ sung lại chữ "TechZone" cạnh icon chip. Quy tắc màu sắc: Khi nằm trên thẻ card nền trắng thì chữ "TechZone" mang MÀU ĐEN TUYỀN (#0f172a), icon chip nền đỏ đô (#991b1b) viền bo góc.
+   - Trang Đăng ký (register.html): Sửa logo cột trái dùng chung một cấu trúc chuẩn duy nhất [Icon chip đỏ đô] + [Chữ TechZone màu trắng tinh #ffffff], bỏ việc tách chữ "Tech Zone" hoặc chữ màu xanh dương.
+5. KHẮC PHỤC TRIỆT ĐỂ NÚT "THÊM VÀO GIỎ HÀNG" TRÊN MOBILE:
+   - Tìm và xóa bỏ toàn bộ mã màu xanh dương trong các truy vấn @media (max-width: 768px), @media (max-width: 640px), @media (max-width: 600px).
+   - Ép toàn bộ nút mua hàng, thêm giỏ hàng trên mobile sang màu ĐỎ ĐÔ ĐẬM: background: #991b1b !important; color: #ffffff !important; border-color: #7f1d1d !important;.
+```
+
+### Các bước đã xử lý:
+1. **Chuẩn hóa thanh Flashsale "Đã bán X/100 suất" (`index.html`, `js/main.js`, `css/style.css`):**
+   - Đặt `.flashsale-cards-grid .product-card` và `.tz-flashsale-item` thành `display: flex !important; flex-direction: column !important; height: 100% !important;`.
+   - Căn chỉnh thanh tiến trình `.flash-sale-progress`, `.tz-sold-bar` bằng `margin-top: auto !important; margin-bottom: 10px !important; width: 100% !important;`.
+   - Kéo tràn đầy 100% bằng nền đỏ đô `#991b1b !important;` (cả container và `.fill`), xóa bỏ triệt để nền hồng nhạt `#fee2e2`.
+   - Chữ bên trong thanh hiển thị **MÀU TRẮNG TINH (`#ffffff !important;`)**, `font-weight: 700; font-size: 11.5px; line-height: 20px;`, kèm icon ngọn lửa trắng nổi bật, sắc nét và đều nhau 100% trên cả 5 thẻ sản phẩm.
+2. **Đồng bộ Icon Vận chuyển & Thanh toán sang xám trung tính (`checkout.html`, `css/style.css`):**
+   - Cập nhật cả 6 icon trong khung "2. Hình Thức Vận Chuyển" (Hỏa tốc, Tiêu chuẩn) và "3. Phương Thức Thanh Toán" (COD, VNPAY, MoMo, Trả góp) sang màu xám trung tính `#64748b !important;`.
+   - Khử sạch hoàn toàn các màu xanh lá (`text-success`), xanh dương (`text-primary`), tím MoMo, vàng cam tại cụm icon lựa chọn phương thức.
+3. **Dòng bản quyền Footer dạt sát góc trái toàn bộ 11 trang HTML (`*.html`, `css/style.css`):**
+   - Loại bỏ class `container` khỏi `<div class="container footer-bottom-bar">` trên toàn bộ 11 file HTML (trước đó làm thanh bottom bị giới hạn chiều rộng 1200px và căn giữa, khiến chữ bản quyền trôi vào giữa màn hình rộng).
+   - Thiết lập `.footer-bottom-bar` đạt chiều rộng `100% !important; width: 100% !important;`, đệm lề trái `padding-left: 95px !important;` (Desktop) và `padding-left: 70px !important;` (Mobile) giúp dòng chữ bản quyền dạt thẳng về mép trái ngay ngắn và né hoàn hảo nút tròn CSKH 24/7.
+4. **Sửa lỗi Logo trang Đăng nhập & Đăng ký (`login.html`, `register.html`, `complete-profile.html`, `css/style.css`):**
+   - **`login.html`**: Khôi phục lại chữ "TechZone" cạnh icon chip. Áp dụng quy tắc màu thông minh: Do nằm trên thẻ card trắng, chữ "TechZone" mang màu **ĐEN TUYỀN (`#0f172a !important;`)**, `font-weight: 800; font-size: 1.45rem;`, icon chip nền đỏ đô `#991b1b`, icon vi mạch trắng tinh (sửa lỗi trước đó ép chữ màu trắng trên nền card trắng gây tàng hình chữ).
+   - **`register.html`**: Đồng bộ logo cột trái banner tối thành khối chuẩn duy nhất `[Icon chip đỏ đô #991b1b]` + `[Chữ TechZone màu trắng tinh #ffffff]`, loại bỏ việc tách thẻ span hay màu xanh dương cũ.
+5. **Khắc phục triệt để lỗi nút "Thêm vào giỏ hàng" màu xanh dương trên Mobile (`css/style.css`):**
+   - Định vị và xóa bỏ thuộc tính `background-color: #0284c7 !important;` tại dòng 4932 bên trong `@media (max-width: 640px)` của file `style.css` (nguyên nhân chính làm các nút mua hàng trên mobile bị ép màu xanh).
+   - Sửa các quy tắc gốc từ `#0284c7` sang `#991b1b`.
+   - Bổ sung các bộ chọn cụ thể cao (`.tz-product-card .tz-card-actions button`, `.flashsale-cards-grid .product-card .card-actions button`, v.v.) trong các truy vấn `@media (max-width: 768px)`, `@media (max-width: 640px)`, `@media (max-width: 600px)` ép 100% nút mua hàng sang **màu ĐỎ ĐÔ ĐẬM (`background: #991b1b !important; color: #ffffff !important; border-color: #7f1d1d !important;`)**.
+
+
+## <a id="prompt-94"></a>Prompt 94: Tinh chỉnh Media Queries Responsive Mobile (@media (max-width: 768px)) - Topbar Gọn Gàng, Search Pill 20px, Flashsale 1 Dòng & Form Profile Né Nút CSKH
+
+### Yêu cầu người dùng:
+```text
+Cập nhật các truy vấn media query responsive (@media (max-width: 768px)) trong file style.css để xử lý dứt điểm các lỗi hiển thị trên thiết bị di động:
+
+1. TOPBAR & HEADER MOBILE (Hình 1 & 3):
+- Topbar: Trên mobile (< 768px), ẩn hoàn toàn các mục không cần thiết để tránh tràn chữ ("Hệ thống 86 chi nhánh" và "Tin tức TechZone"). Chỉ giữ lại nút chọn khu vực bên trái và Hotline bên phải, căn tràn đều 100% không bị tràn viền.
+- Thanh tìm kiếm:
+  + Chiều cao tổng thể khung tìm kiếm: 38px.
+  + Nút "Tìm kiếm": Giảm kích thước vừa vặn, padding 0 12px, font-size 12px, bo tròn góc dạng viên thuốc (border-radius: 20px) ăn khớp hoàn toàn với vỏ ngoài, không để góc vuông thô to.
+
+2. BẢNG FLASHSALE TRÊN MOBILE (Hình 2):
+- Thanh tiến trình "Đã bán X/100 suất":
+  + Chiều cao thanh: min-height: 20px; border-radius: 12px;
+  + Căn chỉnh chữ: font-size: 11px; font-weight: 700; color: #ffffff !important; white-space: nowrap; line-height: 20px; text-align: center; width: 100%;
+  + Đảm bảo chữ nằm gọn gàng bên trong dải màu đỏ #991b1b, không bị rớt dòng thành 2 hàng hoặc lệch icon.
+
+3. TRANG HỒ SƠ CÁ NHÂN TRÊN MOBILE (Hình 3):
+- Khung nội dung (Form cá nhân): Bổ sung padding 2 bên 16px (box-sizing: border-box) để các trường nhập liệu không bị chạm sát mép màn hình.
+- Các ô input (Tài khoản/Email, Họ tên, Số điện thoại, Ngày sinh): Chiều rộng 100%, bo góc 8px.
+- Nhóm giới tính:
+  + Dịch chuyển sang phải một khoảng hợp lý (padding-left: 56px hoặc 60px) và thêm padding-bottom (padding-bottom: 80px) để không bị nút nổi CSKH 24/7 ở góc dưới bên trái che mất lựa chọn "Nam".
+```
+
+### Các bước đã xử lý:
+1. **Topbar & Khung tìm kiếm Mobile (`css/style.css`):**
+   - Thiết lập `.tz-topbar .topbar-hide-mobile`, `.topbar-divider`, `.topbar-left a.topbar-link` ẩn triệt để trên màn hình nhỏ `< 768px` bằng `display: none !important; visibility: hidden !important; width: 0 !important; height: 0 !important;`.
+   - Căn lề `.tz-topbar-inner` và `.tz-topbar .container` dạng `flex; justify-content: space-between;` phân phối đều nút chọn Tỉnh/Thành phố bên trái và số Hotline `1800.6868` bên phải mà không gây tràn ngang khung nhìn.
+   - Thu gọn khung tìm kiếm mobile xuống chuẩn `height: 38px !important; border-radius: 25px;`.
+   - Chuẩn hóa nút **Tìm kiếm**: chiều cao `30px`, `padding: 0 12px`, `font-size: 12px; font-weight: 700;`, bo tròn kiểu viên thuốc (`border-radius: 20px !important;`), màu đỏ đô đậm `#991b1b !important;` ăn khớp hoàn hảo vào lòng khung tìm kiếm bo tròn mà không lộ góc vuông nham nhở.
+2. **Thanh tiến trình Flashsale Mobile 1 dòng sắc nét (`css/style.css`):**
+   - Thiết lập `.flash-sale-progress`, `.tz-sold-bar` đạt `min-height: 20px !important; height: 20px !important; border-radius: 12px !important; background: #991b1b !important;`.
+   - Chữ thông số `Đã bán X/100 suất` kèm icon lửa được căn giữa chuẩn xác: `line-height: 20px; font-size: 11px; font-weight: 700; color: #ffffff !important; white-space: nowrap !important;`.
+   - Đảm bảo 100% nội dung nằm trọn vẹn trong dải màu đỏ đô `#991b1b`, triệt tiêu hoàn toàn hiện tượng vỡ dòng thành 2 hàng hoặc lệch icon ngọn lửa trên các màn hình hẹp (360px - 768px).
+3. **Responsive Trang Hồ Sơ Cá Nhân né nút CSKH (`css/style.css`):**
+   - Bổ sung đệm biên `.tz-profile-page { padding-left: 16px !important; padding-right: 16px !important; box-sizing: border-box !important; }` cùng `.tz-profile-card` để ngăn các trường nhập liệu chạm sát mép màn hình điện thoại.
+   - Ép các trường input (`#profile-account`, `#profile-fullname`, `#profile-phone`, `#profile-birthday`) đạt `width: 100% !important; border-radius: 8px !important; height: 42px !important;`.
+   - Tinh chỉnh nhóm chọn giới tính `.tz-gender-group`: Thêm `padding-left: 60px !important;` để dịch chuyển toàn bộ cụm chọn (Nam, Nữ, Khác) sang phải, đồng thời thiết lập `padding-bottom: 80px !important;` tạo khoảng đệm an toàn giúp người dùng thao tác dễ dàng mà không bao giờ bị nút CSKH 24/7 tròn ở góc trái che khuất lựa chọn "Nam".
+
+
+## <a id="prompt-95"></a>Prompt 95: Responsive Profile Mobile (@media (max-width: 768px)) - Khắc Phục Dải 3 Thẻ Tràn Viền, Căn Chỉnh Container Card & Né Nút CSKH 42px
+
+### Yêu cầu người dùng:
+```text
+Cập nhật truy vấn media query responsive (@media (max-width: 768px)) cho trang profile.html trong file style.css để khắc phục hoàn toàn 4 lỗi hiển thị trên thiết bị di động:
+
+1. KHẮC PHỤC DẢI 3 THẺ THỐNG KÊ BỊ TRÀN VIỀN:
+- Chuyển .tz-benefit-grid / .smember-stat-grid trên mobile từ 3 cột ngang chật chội sang:
+  + Dạng lưới 1 cột hoặc cuộn ngang mượt mà (display: grid; grid-template-columns: 1fr; gap: 10px;) HOẶC (grid-template-columns: repeat(3, 1fr) với font chữ thu nhỏ 11px, padding: 8px 4px gọn gàng, không bị tràn mép phải).
+  + Đảm bảo nội dung con số và chữ chú thích (0 điểm, 0 đ, 0 đơn) nằm trọn trong thẻ, không rớt dòng ép chữ.
+
+2. CĂN CHỈNH CONTAINER VÀ CARD FORM KHÔNG BỊ CẮT CHỮ:
+- Thiết lập .tz-profile-page, .tz-profile-layout, .tz-profile-content, .tz-profile-card:
+  width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; padding: 0 12px !important;
+- Đoạn mô tả "Quản lý thông tin hồ sơ...": font-size: 12px; line-height: 1.4; white-space: normal; word-break: break-word;.
+
+3. XỬ LÝ NÚT TRÒN CSKH ĐÈ LÊN THỐNG KÊ & CHỮ GIỚI TÍNH:
+- Trên mobile (< 768px):
+  + Thu nhỏ nút CSKH từ 50px xuống 42px x 42px, đặt sát góc dưới cùng bên phải hoặc căn lề: bottom: 20px; left: 16px;.
+  + Tăng khoảng cách an toàn cho các ô form: Khối "Giới tính" đặt padding-left: 55px; hoặc margin-bottom: 24px;.
+  + Đáy trang .tz-profile-page: thêm padding-bottom: 80px để nút CSKH không che khuất bất kỳ nút bấm hoặc tùy chọn nào.
+
+Cung cấp đoạn CSS ghi đè để dán vào style.css!
+```
+
+### Các bước đã xử lý:
+1. **Khắc phục dải 3 thẻ thống kê tràn viền (`css/style.css`):**
+   - Chuyển `.tz-benefit-grid` / `.smember-stat-grid` trên mobile `< 768px` sang dạng lưới 1 cột dọc thông thoáng: `display: grid !important; grid-template-columns: 1fr !important; gap: 10px !important; width: 100% !important;`.
+   - Căn chỉnh `.benefit-card`: `padding: 12px 14px !important; width: 100% !important; box-sizing: border-box !important; border-radius: 10px !important;`.
+   - Con số hiển thị (`.benefit-val`) giữ chuẩn `1.15rem`, `font-weight: 800; color: #0f172a;`, chữ chú thích `.benefit-label` hiển thị `12px; color: #64748b; white-space: nowrap;` nằm gọn gàng bên trong thẻ, triệt tiêu 100% hiện tượng ép chữ, rớt dòng hoặc tràn mép phải màn hình.
+2. **Căn chỉnh Container và Card form không bị cắt chữ (`css/style.css`):**
+   - Đồng bộ `.tz-profile-page, .tz-profile-layout, .tz-profile-content, .tz-profile-card` với `width: 100% !important; max-width: 100% !important; box-sizing: border-box !important;`.
+   - Căn lề thẻ card `.tz-profile-card`: `padding: 16px 12px !important; border-radius: 12px !important; overflow-x: hidden !important;`.
+   - Cập nhật đoạn mô tả `.tz-profile-card-header p` ("Quản lý thông tin hồ sơ để bảo mật tài khoản..."): `font-size: 12px !important; line-height: 1.4 !important; white-space: normal !important; word-break: break-word !important; color: #64748b !important; margin: 4px 0 14px 0 !important;` giúp văn bản xuống dòng tự nhiên, không bị cắt xén biên.
+3. **Thu gọn nút tròn CSKH và khoảng cách an toàn form (`css/style.css`):**
+   - Thu nhỏ kích thước nút CSKH nổi `.tz-support-trigger-btn, #btn-toggle-support` từ 50-58px xuống **42px x 42px** (`min-width: 42px; min-height: 42px; font-size: 18px;`), vị trí cố định gọn gàng tại `bottom: 20px !important; left: 16px !important;`.
+   - Khối chọn giới tính `.tz-gender-group`: Thêm `padding-left: 55px !important; margin-bottom: 24px !important;` dịch chuyển toàn bộ các nhãn lựa chọn sang phải, hoàn toàn thoát khỏi vùng phủ của nút CSKH.
+   - Thân trang `.tz-profile-page`: Bổ sung `padding-bottom: 80px !important;` tạo khoảng đệm an toàn tuyệt đối ở chân trang, đảm bảo nút CSKH không che khuất bất kỳ nút bấm hoặc trường dữ liệu nào khi cuộn trang đến cuối.
+
+
+## <a id="prompt-96"></a>Prompt 96: Thu Gọn Khoảng Cách Giới Tính & Sổ Địa Chỉ Nhận Hàng Trên Mobile (@media (max-width: 768px))
+
+### Yêu cầu người dùng:
+```text
+Hãy thu gọn khoảng cách giữa mục "Giới tính" và mục "Sổ Địa Chỉ Nhận Hàng Mặc Định" trên giao diện responsive mobile trong profile.html và style.css:
+
+1. NGUYÊN NHÂN:
+- Khối đường kẻ nét đứt và tiêu đề "Sổ Địa Chỉ Nhận Hàng Mặc Định" đang bị dính margin/padding trên dưới quá lớn, tạo ra khoảng trắng thừa thô kệch.
+
+2. CÁCH XỬ LÝ TRONG @media (max-width: 768px):
+- Giảm margin và padding của khối ngăn cách:
+  div:has(> [class*="Sổ Địa Chỉ"]),
+  .profile-address-section,
+  div[style*="border-top: 1px dashed"] {
+    margin: 12px 0 8px 0 !important;
+    padding-top: 10px !important;
+  }
+- Khối Giới tính (.tz-gender-group): Giảm margin-bottom xuống còn 4px - 6px, padding trên dưới 4px.
+- Thu nhỏ khoảng cách giữa dòng mô tả và ô input bên dưới.
+
+Cung cấp đoạn mã CSS cập nhật để dán vào style.css!
+```
+
+### Các bước đã xử lý:
+1. **Bổ sung semantic class vào `profile.html`:**
+   - Thêm class `.profile-address-section .tz-address-section` vào thẻ `div` ngăn cách đường nét đứt của khối "Sổ Địa Chỉ Nhận Hàng Mặc Định" để dễ dàng override style và tối ưu tương thích cross-browser.
+2. **Thu gọn khoảng cách khối Giới tính (`css/style.css`):**
+   - Giảm khoảng cách dưới của nhóm giới tính: `.tz-form-group:has(.tz-gender-group) { margin-bottom: 6px !important; }`.
+   - Thiết lập `.tz-gender-group { padding-top: 4px !important; padding-bottom: 4px !important; margin-bottom: 6px !important; padding-left: 55px !important; }` duy trì việc né nút tròn CSKH 42px bên trái nhưng loại bỏ hoàn toàn khoảng trắng dư thừa bên dưới.
+3. **Cắt giảm margin/padding khối Sổ địa chỉ & dòng mô tả (`css/style.css`):**
+   - Override khối đường nét đứt `.profile-address-section, div[style*="border-top: 1px dashed"]`: giảm từ `margin: 1.5rem 0 1rem; padding-top: 1.25rem;` xuống chỉ còn `margin: 12px 0 8px 0 !important; padding-top: 10px !important;`.
+   - Giảm khoảng cách tiêu đề `h4` xuống `margin: 0 0 3px 0 !important; font-size: 0.95rem !important;`.
+   - Giảm khoảng cách dòng mô tả `p` xuống `margin: 0 0 8px 0 !important; font-size: 11.5px !important; line-height: 1.35 !important;` giúp các ô input Tỉnh/Thành phố kéo sát lên ngay ngắn, liền mạch và thẩm mỹ.
